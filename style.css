@@ -363,7 +363,7 @@ label {
 
 .contact_text-field {
     font-family: 'Ppfragment Variable', Arial, sans-serif;
-    font-size: 1.21rem;
+    font-size: 1.11rem;
     border: none;
     border-bottom: 1px solid var(--base-color-brand--dark-blue-100);
     font-variation-settings: "wght" 310;
@@ -387,7 +387,7 @@ label {
 
 .contact_text-area {
     font-family: 'Ppfragment Variable', Arial, sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.11rem;
     border: none;
     border-bottom: 1px solid var(--base-color-brand--dark-blue-100);
     background-color: transparent;
