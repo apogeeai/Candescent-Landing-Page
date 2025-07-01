@@ -84,7 +84,6 @@ html {
     height: 100%;
 }
 
-/* Add body padding to account for fixed nav */
 body {
     background-color: #eeedeb;
     font-variation-settings: "wght" 310;
@@ -93,7 +92,6 @@ body {
     line-height: 1.4;
     min-height: 100%;
     margin: 0;
-    padding-top: 80px;
     overscroll-behavior: none !important;
 }
 
@@ -701,10 +699,7 @@ label {
 /* Transparent custom nav styles */
 .custom-nav {
   width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
+  position: static;
   background: #eeedeb;
   box-shadow: none;
 }
