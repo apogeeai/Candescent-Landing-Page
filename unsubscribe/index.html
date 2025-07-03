@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" class="w-mod-js w-mod-ix">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Email Preferences | Candescent</title>
+
+    <!-- Favicon and shortcut icon -->
+    <link rel="icon" type="image/png"
+        href="https://cdn.prod.website-files.com/672c8bafbeffacdb79421b7d/673f2f0dab131d4bc58e2e79_Group%2054570%20(1)%20(1).png">
+    <link rel="shortcut icon" type="image/png"
+        href="https://cdn.prod.website-files.com/672c8bafbeffacdb79421b7d/673f2f0dab131d4bc58e2e79_Group%2054570%20(1)%20(1).png">
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <!-- Transparent Navigation Bar -->
+    <nav class="custom-nav padding-global">
+        <div class="custom-nav__container">
+            <a href="/" class="custom-nav__logo-link">
+                <img src="https://uploads-ssl.webflow.com/672c8bafbeffacdb79421b7d/6733c79fd60fdd621c1492dc_Logo.svg"
+                    alt="Candescent Logo" class="custom-nav__logo" />
+            </a>
+            <div class="custom-nav__cta-wrapper">
+                <button class="button is-secondary w-button">Let's talk</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="page-wrapper">
+        <main class="main-wrapper">
+            <section class="section_unsubscribe">
+                <div class="padding-global">
+                    <div class="padding-section-medium is-unsubscribe">
+                        <div class="container-medium">
+                            <div class="unsubscribe_component">
+                                <div class="unsubscribe_content">
+                                    <div class="unsubscribe_header">
+                                        <h1 class="heading-style-h2">Email Preference Center</h1>
+                                        <div class="text-size-regular unsubscribe_description">
+                                            Select which types of emails you'd like to receive from Candescent. You can
+                                            update your preferences at any time.
+                                        </div>
+                                    </div>
+
+                                    <div class="unsubscribe_form-wrapper w-form">
+                                        <form id="email-preferences-form" name="email-preferences-form"
+                                            data-name="Email Preferences Form" method="post" class="unsubscribe_form">
+                                            <div class="unsubscribe_email-wrapper">
+                                                <label for="email-address" class="unsubscribe_label">Email
+                                                    Address</label>
+                                                <input class="unsubscribe_text-field w-input" maxlength="256"
+                                                    name="email-address" data-name="Email Address"
+                                                    placeholder="your.email@company.com" type="email" id="email-address"
+                                                    required="">
+                                            </div>
+
+                                            <div class="unsubscribe_preferences">
+                                                <div class="unsubscribe_checkbox-group">
+                                                    <label class="unsubscribe_checkbox-wrapper">
+                                                        <input type="checkbox" name="product-updates"
+                                                            class="unsubscribe_checkbox" checked>
+                                                        <span class="unsubscribe_checkmark"></span>
+                                                        <div class="unsubscribe_checkbox-content">
+                                                            <div class="text-weight-450">Product & Feature Updates</div>
+                                                            <div
+                                                                class="text-size-small unsubscribe_checkbox-description">
+                                                                Announcements about new tools, enhancements, and
+                                                                improvements to the Candescent platform.
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </div>
+
+                                                <div class="unsubscribe_checkbox-group">
+                                                    <label class="unsubscribe_checkbox-wrapper">
+                                                        <input type="checkbox" name="thought-leadership"
+                                                            class="unsubscribe_checkbox" checked>
+                                                        <span class="unsubscribe_checkmark"></span>
+                                                        <div class="unsubscribe_checkbox-content">
+                                                            <div class="text-weight-450">Thought Leadership &
+                                                                Educational Content</div>
+                                                            <div
+                                                                class="text-size-small unsubscribe_checkbox-description">
+                                                                Guides, eBooks, industry insights, and best practices on
+                                                                digital banking and member engagement.
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </div>
+
+                                                <div class="unsubscribe_checkbox-group">
+                                                    <label class="unsubscribe_checkbox-wrapper">
+                                                        <input type="checkbox" name="promotions"
+                                                            class="unsubscribe_checkbox" checked>
+                                                        <span class="unsubscribe_checkmark"></span>
+                                                        <div class="unsubscribe_checkbox-content">
+                                                            <div class="text-weight-450">Promotions & Offers</div>
+                                                            <div
+                                                                class="text-size-small unsubscribe_checkbox-description">
+                                                                Limited-time pricing, pilot opportunities, or partner
+                                                                offers tailored for financial institutions.
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </div>
+
+                                                <div class="unsubscribe_checkbox-group">
+                                                    <label class="unsubscribe_checkbox-wrapper">
+                                                        <input type="checkbox" name="events"
+                                                            class="unsubscribe_checkbox" checked>
+                                                        <span class="unsubscribe_checkmark"></span>
+                                                        <div class="unsubscribe_checkbox-content">
+                                                            <div class="text-weight-450">Event Invitations</div>
+                                                            <div
+                                                                class="text-size-small unsubscribe_checkbox-description">
+                                                                Invites to webinars, product demos, conferences, and
+                                                                exclusive Candescent events.
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </div>
+
+                                                <div class="unsubscribe_checkbox-group">
+                                                    <label class="unsubscribe_checkbox-wrapper">
+                                                        <input type="checkbox" name="feedback"
+                                                            class="unsubscribe_checkbox" checked>
+                                                        <span class="unsubscribe_checkmark"></span>
+                                                        <div class="unsubscribe_checkbox-content">
+                                                            <div class="text-weight-450">Customer Feedback & Surveys
+                                                            </div>
+                                                            <div
+                                                                class="text-size-small unsubscribe_checkbox-description">
+                                                                Occasional requests for your input to help improve our
+                                                                product and services.
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </div>
+
+                                                <div class="unsubscribe_checkbox-group">
+                                                    <label class="unsubscribe_checkbox-wrapper">
+                                                        <input type="checkbox" name="company-news"
+                                                            class="unsubscribe_checkbox" checked>
+                                                        <span class="unsubscribe_checkmark"></span>
+                                                        <div class="unsubscribe_checkbox-content">
+                                                            <div class="text-weight-450">Company News & Press Releases
+                                                            </div>
+                                                            <div
+                                                                class="text-size-small unsubscribe_checkbox-description">
+                                                                Updates on company milestones, leadership announcements,
+                                                                media coverage, or major initiatives.
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </div>
+
+                                                <div class="unsubscribe_divider"></div>
+
+                                                <div class="unsubscribe_checkbox-group">
+                                                    <label
+                                                        class="unsubscribe_checkbox-wrapper unsubscribe_unsubscribe-all">
+                                                        <input type="checkbox" name="unsubscribe-all"
+                                                            class="unsubscribe_checkbox" id="unsubscribe-all">
+                                                        <span class="unsubscribe_checkmark"></span>
+                                                        <div class="unsubscribe_checkbox-content">
+                                                            <div class="text-weight-450">Unsubscribe from all
+                                                                non-essential emails</div>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="unsubscribe_actions">
+                                                <input type="submit" data-wait="Updating..."
+                                                    class="button is-secondary w-button" value="Update Preferences">
+                                            </div>
+                                        </form>
+
+                                        <div class="unsubscribe_success-message w-form-done" tabindex="-1"
+                                            role="region">
+                                            <div class="unsubscribe_success-wrapper">
+                                                <div class="text-size-large text-weight-450">Preferences Updated!</div>
+                                                <div>Your email preferences have been successfully updated.</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="w-form-fail" tabindex="-1" role="region">
+                                            <div>Oops! Something went wrong while updating your preferences.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="padding-global">
+            <div class="container-large">
+                <div class="padding-section-medium">
+                    <div class="footer_content">
+                        <div class="footer_wrapper-top">
+                            <div class="footer3_column-left">
+                                <a href="/" class="footer3_logo-link w-nav-brand">
+                                    <img loading="lazy"
+                                        src="https://cdn.prod.website-files.com/672c8bafbeffacdb79421b7d/673cdf03ef03e793b55ce1d4_Candescent%20logo.svg"
+                                        alt="" class="footer3_logo">
+                                </a>
+                                <div class="footer3_social-list">
+                                    <a href="https://www.linkedin.com/company/candescent-tech/posts/?feedView=all"
+                                        target="_blank" class="footer3_social-link w-inline-block">
+                                        <div class="footer3_social-icon w-embed">
+                                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M17.1292 0.528076H1.31351C0.588816 0.528076 0 1.12513 0 1.85806V17.6449C0 18.3779 0.588816 18.9749 1.31351 18.9749H17.1292C17.8539 18.9749 18.4468 18.3779 18.4468 17.6449V1.85806C18.4468 1.12513 17.8539 0.528076 17.1292 0.528076ZM5.57522 16.3396H2.84114V7.53622H5.57934V16.3396H5.57522ZM4.20818 6.33389C3.33113 6.33389 2.62291 5.62154 2.62291 4.74861C2.62291 3.87568 3.33113 3.16334 4.20818 3.16334C5.08111 3.16334 5.79346 3.87568 5.79346 4.74861C5.79346 5.62566 5.08523 6.33389 4.20818 6.33389ZM15.8239 16.3396H13.0898V12.0573C13.0898 11.0362 13.0692 9.72267 11.6693 9.72267C10.2446 9.72267 10.0263 10.8344 10.0263 11.9832V16.3396H7.29226V7.53622H9.91517V8.73856H9.95223C10.3187 8.0468 11.2122 8.0468 12.5422 7.31799C15.3092 7.31799 15.8239 9.14208 15.8239 11.5138V16.3396Z"
+                                                    fill="currentColor"></path>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer3_column-right">
+                                <div class="footer3_banner-top">
+                                    <div class="footer3_box">
+                                        <a href="/account-opening" class="footer_link-large">Account Opening</a>
+                                        <a href="/digital-banking" class="footer_link-large">Digital Banking</a>
+                                        <a href="/digital-branch" class="footer_link-large">Digital Branch</a>
+                                    </div>
+                                    <div class="footer3_box">
+                                        <a href="/about-us" class="footer_link-large">Company</a>
+                                        <a href="https://ncr.wd1.myworkdayjobs.com/ext_digitalfirst" target="_blank"
+                                            class="footer_link-large">Careers</a>
+                                        <a href="/contact" class="footer_link-large">Contact</a>
+                                    </div>
+                                </div>
+                                <a href="https://customerportal.ncrvoyix.com/" target="_blank"
+                                    class="button is-tertiary w-button">Login</a>
+                            </div>
+                        </div>
+                        <div class="line-divider"></div>
+                        <div class="footer_wrapper-bottom">
+                            <div class="footer3_column-left-bottom">
+                                <a href="/terms/privacy-policy" class="footer_link">Privacy Policy</a>
+                                <a href="/terms" class="footer_link">Terms and Conditions</a>
+                            </div>
+                            <div class="footer3_column-right-bottom">
+                                <div class="text-size-small text-color-alternate">©<span class="is-year">2025</span>
+                                    Candescent. All rights reserved.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Handle unsubscribe all functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const unsubscribeAllCheckbox = document.getElementById('unsubscribe-all');
+            const otherCheckboxes = document.querySelectorAll('.unsubscribe_checkbox:not(#unsubscribe-all)');
+
+            // When "unsubscribe all" is checked, uncheck all others
+            unsubscribeAllCheckbox.addEventListener('change', function () {
+                if (this.checked) {
+                    otherCheckboxes.forEach(checkbox => {
+                        checkbox.checked = false;
+                    });
+                }
+            });
+
+            // When any other checkbox is checked, uncheck "unsubscribe all"
+            otherCheckboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', function () {
+                    if (this.checked) {
+                        unsubscribeAllCheckbox.checked = false;
+                    }
+                });
+            });
+        });
+
+        // Form submission handler
+        document.getElementById('email-preferences-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Show success message
+            const successMessage = document.querySelector('.unsubscribe_success-message');
+            const form = document.querySelector('.unsubscribe_form');
+
+            if (successMessage && form) {
+                form.style.display = 'none';
+                successMessage.style.display = 'block';
+            }
+        });
+
+        // Set current year
+        document.addEventListener('DOMContentLoaded', function () {
+            const yearSpan = document.querySelector('.is-year');
+            if (yearSpan) {
+                yearSpan.textContent = new Date().getFullYear();
+            }
+        });
+    </script>
+</body>
+
+</html>
