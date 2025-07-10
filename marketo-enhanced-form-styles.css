@@ -1,0 +1,351 @@
+/* Enhanced Marketo Form Styles - Copy and Paste Into Marketo */
+
+/* Font Definitions */
+@font-face {
+    font-family: 'Ppfragment Variable';
+    src: url('https://cdn.prod.website-files.com/672c8bafbeffacdb79421b7d/67363dbdccc085fcae98dc00_PPFragment-Variable.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ppfragment';
+    src: url('https://cdn.prod.website-files.com/672c8bafbeffacdb79421b7d/673c7aef0ea079d1d4d615cb_PPFragment-GlareSemiBold.ttf') format('truetype'),
+        url('https://cdn.prod.website-files.com/672c8bafbeffacdb79421b7d/673c7aefc2b5ae48a94e2e54_PPFragment-SansSemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ppfragment';
+    src: url('https://cdn.prod.website-files.com/672c8bafbeffacdb79421b7d/673c7aefd20244d414eaa952_PPFragment-GlareRegular.ttf') format('truetype'),
+        url('https://cdn.prod.website-files.com/672c8bafbeffacdb79421b7d/673c7aeffe3f45d7548f8395_PPFragment-SansRegular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Reset Marketo form container - Enhanced for wider forms */
+.mktoForm {
+    width: 100% !important;
+    max-width: 600px !important;
+    background: transparent !important;
+    border: none !important;
+    font-family: 'Ppfragment Variable', Arial, sans-serif !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
+    box-shadow: none !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+}
+
+/* Layout elements - Enhanced spacing and full width */
+.mktoFormRow,
+.mktoOffset,
+.mktoGutter,
+.mktoFormCol,
+.mktoFieldWrap {
+    width: 100% !important;
+    margin: 0 0 1.5rem 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    float: none !important;
+    display: block !important;
+    box-sizing: border-box !important;
+}
+
+/* Enhanced label styling */
+.mktoLabel {
+    font-size: .875rem !important;
+    font-weight: 300 !important;
+    color: #081728 !important;
+    font-family: 'Ppfragment Variable', Arial, sans-serif !important;
+    line-height: 1.2 !important;
+    margin-bottom: 0.5rem !important;
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: auto !important;
+    height: auto !important;
+    text-transform: none !important;
+    letter-spacing: normal !important;
+}
+
+/* Enhanced input fields - Premium underlined style */
+.mktoField {
+    font-family: 'Ppfragment Variable', Arial, sans-serif !important;
+    font-size: 1.11rem !important;
+    font-variation-settings: "wght" 310 !important;
+    border: none !important;
+    border-bottom: 1px solid #081728 !important;
+    background: transparent !important;
+    border-radius: 0 !important;
+    width: 100% !important;
+    min-height: 3.375rem !important;
+    padding: 1rem 2rem 1rem .75rem !important;
+    box-sizing: border-box !important;
+    color: #081728 !important;
+    box-shadow: none !important;
+    outline: none !important;
+    margin: 0 !important;
+    transition: all .45s cubic-bezier(.25, .46, .45, .94) !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+}
+
+/* Enhanced input focus state - Smooth blue transition */
+.mktoField:focus {
+    outline: none !important;
+    border-bottom-color: #669ff3 !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    transform: none !important;
+}
+
+/* Textarea specific styling */
+.mktoField[type="textarea"],
+textarea.mktoField {
+    min-height: 5rem !important;
+    resize: vertical !important;
+    font-family: 'Ppfragment Variable', Arial, sans-serif !important;
+}
+
+/* Enhanced placeholder text */
+.mktoField::placeholder,
+.mktoField::-webkit-input-placeholder,
+.mktoField::-moz-placeholder,
+.mktoField:-ms-input-placeholder {
+    color: rgba(8, 23, 40, 0.4) !important;
+    font-family: 'Ppfragment Variable', Arial, sans-serif !important;
+    font-variation-settings: "wght" 310 !important;
+    opacity: 1 !important;
+}
+
+/* Select dropdown styling */
+select.mktoField {
+    background-image: none !important;
+    padding-right: 2rem !important;
+    cursor: pointer !important;
+}
+
+/* Enhanced button - Premium yellow styling */
+.mktoButton {
+    background: #ffcf23 !important;
+    background-color: #ffcf23 !important;
+    background-image: none !important;
+    color: #081728 !important;
+    border: 1px solid #f3c521 !important;
+    font-family: 'Ppfragment', Georgia, sans-serif !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    line-height: 1.35 !important;
+    padding: 1rem 2rem !important;
+    border-radius: 0 !important;
+    cursor: pointer !important;
+    margin: 1.5rem auto 0 auto !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    outline: none !important;
+    display: block !important;
+    width: auto !important;
+    min-width: 180px !important;
+    transition: all .45s cubic-bezier(.25, .46, .45, .94) !important;
+    text-decoration: none !important;
+    -webkit-appearance: none !important;
+}
+
+/* Enhanced button hover state */
+.mktoButton:hover {
+    background: #f3c521 !important;
+    background-color: #f3c521 !important;
+    background-image: none !important;
+    color: #081728 !important;
+    border-color: #fd8 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    transform: none !important;
+}
+
+/* Enhanced button focus and active states */
+.mktoButton:focus,
+.mktoButton:active {
+    background: #f3c521 !important;
+    background-color: #f3c521 !important;
+    background-image: none !important;
+    color: #081728 !important;
+    border-color: #fd8 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    outline: none !important;
+}
+
+/* Enhanced HTML text labels */
+.mktoHtmlText {
+    display: block !important;
+    visibility: visible !important;
+    font-size: .875rem !important;
+    font-weight: 300 !important;
+    color: #081728 !important;
+    font-family: 'Ppfragment Variable', Arial, sans-serif !important;
+    line-height: 1.4 !important;
+    margin-bottom: 0.5rem !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: none !important;
+}
+
+/* Enhanced privacy/disclaimer text */
+.mktoHtmlText p,
+.mktoHtmlText div {
+    font-size: .75rem !important;
+    line-height: 1.3 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Enhanced link styling within form */
+.mktoHtmlText a {
+    color: #2f92dd !important;
+    text-decoration: underline !important;
+    transition: color .3s ease !important;
+}
+
+.mktoHtmlText a:hover {
+    color: #142333 !important;
+}
+
+/* Hide unwanted elements */
+.mktoInstruction,
+.mktoAsterix,
+.mktoRequiredField {
+    display: none !important;
+}
+
+/* Enhanced button row styling - Perfect centering */
+.mktoButtonRow {
+    width: 100% !important;
+    margin: 1.5rem 0 0 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    text-align: center !important;
+    clear: both !important;
+}
+
+/* Enhanced button wrapper - Perfect centering */
+.mktoButtonWrap {
+    margin: 0 auto !important;
+    padding: 0 !important;
+    text-align: center !important;
+    display: inline-block !important;
+    width: auto !important;
+}
+
+/* Enhanced form row spacing */
+.mktoFormRow {
+    margin-bottom: 1.5rem !important;
+    position: relative !important;
+}
+
+/* Hide offset elements completely */
+.mktoOffset {
+    display: none !important;
+    visibility: hidden !important;
+    width: 0 !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Error message styling */
+.mktoError {
+    color: #be0c0c !important;
+    font-size: .875rem !important;
+    font-family: 'Ppfragment Variable', Arial, sans-serif !important;
+    margin-top: 0.5rem !important;
+    display: block !important;
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+}
+
+/* Error state for fields */
+.mktoField.mktoInvalid {
+    border-bottom-color: #be0c0c !important;
+}
+
+/* Checkbox and radio button styling */
+.mktoField[type="checkbox"],
+.mktoField[type="radio"] {
+    width: auto !important;
+    min-height: auto !important;
+    margin-right: 0.5rem !important;
+    border: 2px solid #081728 !important;
+    border-radius: 4px !important;
+    padding: 0 !important;
+}
+
+.mktoField[type="radio"] {
+    border-radius: 50% !important;
+}
+
+/* Enhanced responsive design */
+@media screen and (max-width: 767px) {
+    .mktoForm {
+        max-width: 100% !important;
+        padding: 0 1rem !important;
+    }
+    
+    .mktoField {
+        min-height: 3rem !important;
+        font-size: 1rem !important;
+    }
+    
+    .mktoFormRow {
+        margin-bottom: 1.25rem !important;
+    }
+    
+    .mktoButton {
+        width: 100% !important;
+        min-width: auto !important;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .mktoFormRow {
+        margin-bottom: 1rem !important;
+    }
+    
+    .mktoLabel {
+        font-size: .8rem !important;
+    }
+    
+    .mktoField {
+        font-size: .95rem !important;
+        min-height: 2.75rem !important;
+    }
+}
+
+/* Form success message styling */
+.mktoForm .mktoFormMessage {
+    background: #f0f8ff !important;
+    border: 1px solid #669ff3 !important;
+    color: #081728 !important;
+    padding: 1rem !important;
+    border-radius: 4px !important;
+    font-family: 'Ppfragment Variable', Arial, sans-serif !important;
+    text-align: center !important;
+    margin: 1rem 0 !important;
+}
+
+/* Progressive enhancement - show form only when fonts are loaded */
+.mktoForm {
+    opacity: 1 !important;
+    visibility: visible !important;
+} 

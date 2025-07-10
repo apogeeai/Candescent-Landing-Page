@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="en" class="w-mod-js w-mod-ix">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contact | Candescent</title>
-    
+
+    <!-- Favicon and shortcut icon -->
+    <link rel="icon" type="image/png"
+        href="https://cdn.prod.website-files.com/672c8bafbeffacdb79421b7d/673f2f0dab131d4bc58e2e79_Group%2054570%20(1)%20(1).png">
+    <link rel="shortcut icon" type="image/png"
+        href="https://cdn.prod.website-files.com/672c8bafbeffacdb79421b7d/673f2f0dab131d4bc58e2e79_Group%2054570%20(1)%20(1).png">
+
     <!-- Link to external CSS file -->
-   <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
+
     <!-- Transparent Navigation Bar -->
-    <nav class="custom-nav">
-      <div class="custom-nav__container">
-        <a href="/" class="custom-nav__logo-link">
-          <img src="https://uploads-ssl.webflow.com/672c8bafbeffacdb79421b7d/6733c79fd60fdd621c1492dc_Logo.svg" alt="Candescent Logo" class="custom-nav__logo" />
+    <nav class="custom-nav padding-global">
+        <div class="custom-nav__container">
+            <a href="/" class="custom-nav__logo-link">
+                <img src="https://uploads-ssl.webflow.com/672c8bafbeffacdb79421b7d/6733c79fd60fdd621c1492dc_Logo.svg"
+                    alt="Candescent Logo" class="custom-nav__logo" />
             </a>
-        <div class="custom-nav__cta-wrapper">
-          <button class="button is-secondary w-button">Let's Talk</button>
+            <div class="custom-nav__cta-wrapper">
+                <button class="button is-secondary w-button">Let's talk</button>
+            </div>
         </div>
-                </div>
-            </nav>
+    </nav>
 
     <!-- Main Content -->
     <div class="page-wrapper">
@@ -35,10 +45,12 @@
                                         <div class="contact_wrapper">
                                             <div class="contact_box">
                                                 <div class="text-size-large text-weight-450">Talk to an expert</div>
-                                                <div class="text-size-regular">Complete the form, and we'll reach out to schedule a conversation with one of our experts.</div>
+                                                <div class="text-size-regular">Complete the form, and we'll reach out to
+                                                    schedule a conversation with one of our experts.</div>
                                             </div>
                                             <div class="contact_box">
-                                                <div class="text-size-large text-weight-450">Or give us a call at <a href="tel:1-800-850-5809">1-800-850-5809.</a></div>
+                                                <div class="text-size-large text-weight-450">Or give us a call at <a
+                                                        href="tel:1-800-850-5809">1-800-850-5809.</a></div>
                                                 <div class="text-size-regular"></div>
                                             </div>
                                             <div class="contact_box">
@@ -51,43 +63,86 @@
                                     </div>
                                     <div class="contact_column-right">
                                         <div class="contact_form-wrapper w-form">
-                                            <form id="wf-form-Contact-Form" name="wf-form-Contact-Form" data-name="Contact Form" method="post" class="contact_form">
-                                                <div class="text-size-medium text-weight-550">We can help you take the guesswork and complexity out of finding the right solutions.</div>
+                                            <form id="wf-form-Contact-Form" name="wf-form-Contact-Form"
+                                                data-name="Contact Form" method="post" class="contact_form">
+                                                <div class="text-size-medium text-weight-550">We can help you take the
+                                                    guesswork and complexity out of finding the right solutions.</div>
                                                 <div class="spacer-xsmall"></div>
                                                 <div class="contact-form_banner">
-                                                    <input class="contact_text-field hide w-input" maxlength="256" name="Contact-Form---Page-URL" data-name="Contact Form - Page URL" placeholder="Page URL" type="text" id="page-url">
-                                                    
+                                                    <input class="contact_text-field hide w-input" maxlength="256"
+                                                        name="Contact-Form---Page-URL"
+                                                        data-name="Contact Form - Page URL" placeholder="Page URL"
+                                                        type="text" id="page-url">
+
                                                     <div class="contact-form_wrapper">
-                                                        <label for="Contact-Form---Full-Name" class="contact_label">Full name</label>
-                                                        <input class="contact_text-field w-input" maxlength="256" name="Contact-Form---Full-Name" data-name="Contact Form - Full Name" placeholder="Your full name" type="text" id="Contact-Form---Full-Name" required="">
+                                                        <label for="Contact-Form---Full-Name" class="contact_label">Full
+                                                            name</label>
+                                                        <input class="contact_text-field w-input" maxlength="256"
+                                                            name="Contact-Form---Full-Name"
+                                                            data-name="Contact Form - Full Name"
+                                                            placeholder="Your full name" type="text"
+                                                            id="Contact-Form---Full-Name" required="">
                                                     </div>
                                                     <div class="contact-form_wrapper">
-                                                        <label for="Contact-Form---Company-name" class="contact_label">Company name</label>
-                                                        <input class="contact_text-field w-input" maxlength="256" name="Contact-Form---Company-name" data-name="Contact Form - Company name" placeholder="Your company name" type="text" id="Contact-Form---Company-name" required="">
+                                                        <label for="Contact-Form---Company-name"
+                                                            class="contact_label">Company name</label>
+                                                        <input class="contact_text-field w-input" maxlength="256"
+                                                            name="Contact-Form---Company-name"
+                                                            data-name="Contact Form - Company name"
+                                                            placeholder="Your company name" type="text"
+                                                            id="Contact-Form---Company-name" required="">
                                                     </div>
                                                     <div class="contact-form_wrapper">
-                                                        <label for="Contact-Form---Company-email" id="email-label" class="contact_label">Company email</label>
-                                                        <input class="contact_text-field w-input" maxlength="256" name="Contact-Form---Company-email" data-name="Contact Form - Company email" placeholder="Your company email" type="email" id="Contact-Form---Company-email" required="">
+                                                        <label for="Contact-Form---Company-email" id="email-label"
+                                                            class="contact_label">Company email</label>
+                                                        <input class="contact_text-field w-input" maxlength="256"
+                                                            name="Contact-Form---Company-email"
+                                                            data-name="Contact Form - Company email"
+                                                            placeholder="Your company email" type="email"
+                                                            id="Contact-Form---Company-email" required="">
                                                         <div id="error-message" class="contact_error-message">
                                                             <div>Please enter a valid email address</div>
                                                         </div>
                                                         <div id="error-icon" class="contact-form_error-icon">
-                                                            <img loading="lazy" src="https://cdn.prod.website-files.com/672c8bafbeffacdb79421b7d/674dfd6eaac7abe587c0253c_error.svg" alt="">
+                                                            <img loading="lazy"
+                                                                src="https://cdn.prod.website-files.com/672c8bafbeffacdb79421b7d/674dfd6eaac7abe587c0253c_error.svg"
+                                                                alt="">
                                                         </div>
                                                     </div>
                                                     <div class="contact-form_wrapper">
-                                                        <label for="Phone-number" class="contact_label">Phone number</label>
-                                                        <input class="contact_text-field w-input" maxlength="256" name="Contact-Form---Phone-number" data-name="Contact Form - Phone number" placeholder="Your phone number" type="tel" id="Contact-Form---Phone-number" required="">
+                                                        <label for="Phone-number" class="contact_label">Phone
+                                                            number</label>
+                                                        <input class="contact_text-field w-input" maxlength="256"
+                                                            name="Contact-Form---Phone-number"
+                                                            data-name="Contact Form - Phone number"
+                                                            placeholder="Your phone number" type="tel"
+                                                            id="Contact-Form---Phone-number" required="">
                                                     </div>
                                                     <div class="contact-form_wrapper">
-                                                        <label for="Contact-Form---Additional-information" class="contact_label">Additional information</label>
-                                                        <textarea id="Contact-Form---Additional-information" name="Contact-Form---Additional-information" maxlength="5000" data-name="Contact Form - Additional information" placeholder="Your message" class="contact_text-area w-input"></textarea>
+                                                        <label for="Contact-Form---Additional-information"
+                                                            class="contact_label">Additional information</label>
+                                                        <textarea id="Contact-Form---Additional-information"
+                                                            name="Contact-Form---Additional-information"
+                                                            maxlength="5000"
+                                                            data-name="Contact Form - Additional information"
+                                                            placeholder="Your message"
+                                                            class="contact_text-area w-input"></textarea>
                                                     </div>
                                                 </div>
-                                                <input type="submit" data-wait="Please wait..." class="button is-secondary w-button" value="Get in touch">
-                                                <div class="text-size-tiny">*By submitting this form, you agree to receive emails from Candescent about products, updates and promotions that may be of interest to you. You can withdraw your consent at any time by <a href="/terms/privacy-policy" class="text-style-underline is-hover">clicking here</a> to manage your subscription choices, and <a href="/terms/privacy-policy" class="text-style-underline is-hover">click here</a> to access Candescent's Privacy Policy.</div>
+                                                <input type="submit" data-wait="Please wait..."
+                                                    class="button is-secondary w-button" value="Get in touch">
+                                                <div class="text-size-tiny">*By submitting this form, you agree to
+                                                    receive emails from Candescent about products, updates and
+                                                    promotions that may be of interest to you. You can withdraw your
+                                                    consent at any time by <a href="/terms/privacy-policy"
+                                                        class="text-style-underline is-hover">clicking here</a> to
+                                                    manage your subscription choices, and <a
+                                                        href="/terms/privacy-policy"
+                                                        class="text-style-underline is-hover">click here</a> to access
+                                                    Candescent's Privacy Policy.</div>
                                             </form>
-                                            <div class="solution_success-message w-form-done" tabindex="-1" role="region">
+                                            <div class="solution_success-message w-form-done" tabindex="-1"
+                                                role="region">
                                                 <div class="solution_success-wrapper">
                                                     <div class="text-size-large text-weight-450">Thank you!</div>
                                                     <div>Your submission has been received!</div>
@@ -116,13 +171,19 @@
                         <div class="footer_wrapper-top">
                             <div class="footer3_column-left">
                                 <a href="/" class="footer3_logo-link w-nav-brand">
-                                    <img loading="lazy" src="https://cdn.prod.website-files.com/672c8bafbeffacdb79421b7d/673cdf03ef03e793b55ce1d4_Candescent%20logo.svg" alt="" class="footer3_logo">
+                                    <img loading="lazy"
+                                        src="https://cdn.prod.website-files.com/672c8bafbeffacdb79421b7d/673cdf03ef03e793b55ce1d4_Candescent%20logo.svg"
+                                        alt="" class="footer3_logo">
                                 </a>
                                 <div class="footer3_social-list">
-                                    <a href="https://www.linkedin.com/company/candescent-tech/posts/?feedView=all" target="_blank" class="footer3_social-link w-inline-block">
+                                    <a href="https://www.linkedin.com/company/candescent-tech/posts/?feedView=all"
+                                        target="_blank" class="footer3_social-link w-inline-block">
                                         <div class="footer3_social-icon w-embed">
-                                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M17.1292 0.528076H1.31351C0.588816 0.528076 0 1.12513 0 1.85806V17.6449C0 18.3779 0.588816 18.9749 1.31351 18.9749H17.1292C17.8539 18.9749 18.4468 18.3779 18.4468 17.6449V1.85806C18.4468 1.12513 17.8539 0.528076 17.1292 0.528076ZM5.57522 16.3396H2.84114V7.53622H5.57934V16.3396H5.57522ZM4.20818 6.33389C3.33113 6.33389 2.62291 5.62154 2.62291 4.74861C2.62291 3.87568 3.33113 3.16334 4.20818 3.16334C5.08111 3.16334 5.79346 3.87568 5.79346 4.74861C5.79346 5.62566 5.08523 6.33389 4.20818 6.33389ZM15.8239 16.3396H13.0898V12.0573C13.0898 11.0362 13.0692 9.72267 11.6693 9.72267C10.2446 9.72267 10.0263 10.8344 10.0263 11.9832V16.3396H7.29226V7.53622H9.91517V8.73856H9.95223C10.3187 8.0468 11.2122 7.31799 12.5422 7.31799C15.3092 7.31799 15.8239 9.14208 15.8239 11.5138V16.3396Z" fill="currentColor"></path>
+                                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M17.1292 0.528076H1.31351C0.588816 0.528076 0 1.12513 0 1.85806V17.6449C0 18.3779 0.588816 18.9749 1.31351 18.9749H17.1292C17.8539 18.9749 18.4468 18.3779 18.4468 17.6449V1.85806C18.4468 1.12513 17.8539 0.528076 17.1292 0.528076ZM5.57522 16.3396H2.84114V7.53622H5.57934V16.3396H5.57522ZM4.20818 6.33389C3.33113 6.33389 2.62291 5.62154 2.62291 4.74861C2.62291 3.87568 3.33113 3.16334 4.20818 3.16334C5.08111 3.16334 5.79346 3.87568 5.79346 4.74861C5.79346 5.62566 5.08523 6.33389 4.20818 6.33389ZM15.8239 16.3396H13.0898V12.0573C13.0898 11.0362 13.0692 9.72267 11.6693 9.72267C10.2446 9.72267 10.0263 10.8344 10.0263 11.9832V16.3396H7.29226V7.53622H9.91517V8.73856H9.95223C10.3187 8.0468 11.2122 7.31799 12.5422 7.31799C15.3092 7.31799 15.8239 9.14208 15.8239 11.5138V16.3396Z"
+                                                    fill="currentColor"></path>
                                             </svg>
                                         </div>
                                     </a>
@@ -137,11 +198,14 @@
                                     </div>
                                     <div class="footer3_box">
                                         <a href="/about-us" class="footer_link-large">Company</a>
-                                        <a href="https://ncr.wd1.myworkdayjobs.com/ext_digitalfirst" target="_blank" class="footer_link-large">Careers</a>
-                                        <a href="/contact" aria-current="page" class="footer_link-large w--current">Contact</a>
+                                        <a href="https://ncr.wd1.myworkdayjobs.com/ext_digitalfirst" target="_blank"
+                                            class="footer_link-large">Careers</a>
+                                        <a href="/contact" aria-current="page"
+                                            class="footer_link-large w--current">Contact</a>
                                     </div>
                                 </div>
-                                <a href="https://customerportal.ncrvoyix.com/" target="_blank" class="button is-tertiary w-button">Login</a>
+                                <a href="https://customerportal.ncrvoyix.com/" target="_blank"
+                                    class="button is-tertiary w-button">Login</a>
                             </div>
                         </div>
                         <div class="line-divider"></div>
@@ -151,7 +215,8 @@
                                 <a href="/terms" class="footer_link">Terms and Conditions</a>
                             </div>
                             <div class="footer3_column-right-bottom">
-                                <div class="text-size-small text-color-alternate">©<span class="is-year">2025</span> Candescent. All rights reserved.</div>
+                                <div class="text-size-small text-color-alternate">©<span class="is-year">2025</span>
+                                    Candescent. All rights reserved.</div>
                             </div>
                         </div>
                     </div>
@@ -162,7 +227,7 @@
 
     <script>
         // Set current page URL
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const pageUrlField = document.getElementById('page-url');
             if (pageUrlField) {
                 pageUrlField.value = window.location.href;
@@ -170,18 +235,18 @@
         });
 
         // Email validation exactly as original
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const emailField = document.getElementById('Contact-Form---Company-email');
             const errorMessage = document.getElementById('error-message');
             const errorIcon = document.getElementById('error-icon');
             const emailLabel = document.getElementById('email-label');
-            
+
             if (emailField) {
-                emailField.addEventListener('input', function() {
+                emailField.addEventListener('input', function () {
                     const email = this.value;
                     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
                     const wrapper = this.closest('.contact-form_wrapper');
-                    
+
                     if (email && !emailRegex.test(email)) {
                         wrapper.classList.add('error-state');
                         if (errorMessage) errorMessage.style.display = 'block';
@@ -198,13 +263,13 @@
         });
 
         // Form submission handler
-        document.getElementById('wf-form-Contact-Form').addEventListener('submit', function(e) {
+        document.getElementById('wf-form-Contact-Form').addEventListener('submit', function (e) {
             e.preventDefault();
-            
+
             // Show success message
             const successMessage = document.querySelector('.solution_success-message');
             const form = document.querySelector('.contact_form');
-            
+
             if (successMessage && form) {
                 form.style.display = 'none';
                 successMessage.style.display = 'block';
@@ -212,7 +277,7 @@
         });
 
         // Set current year
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const yearSpan = document.querySelector('.is-year');
             if (yearSpan) {
                 yearSpan.textContent = new Date().getFullYear();
@@ -220,4 +285,5 @@
         });
     </script>
 </body>
+
 </html>
