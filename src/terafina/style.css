@@ -570,6 +570,7 @@ label {
 .terafina-platform_section {
     margin-bottom: 4rem;
     padding: 3rem 0 4rem 0;
+    padding-bottom: 60px;
 }
 
 .terafina-platform_content {
