@@ -569,13 +569,13 @@ label {
 /* Terafina Platform Section */
 .terafina-platform_section {
     margin-bottom: 4rem;
-    padding: 3rem 0;
+    padding: 3rem 0 4rem 0;
 }
 
 .terafina-platform_content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    grid-template-columns: 30% 70%;
+    gap: 3rem;
     align-items: center;
 }
 
@@ -595,6 +595,7 @@ label {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    padding-left: 2rem;
 }
 
 .terafina-stats_grid {
@@ -1013,6 +1014,7 @@ label {
     .terafina-platform_text {
         order: 1;
         text-align: center;
+        padding-left: 0;
     }
 
     .terafina-stats_grid {
