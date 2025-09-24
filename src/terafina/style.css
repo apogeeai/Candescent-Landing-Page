@@ -566,6 +566,37 @@ label {
     border-radius: 12px;
 }
 
+/* Banking Image Section */
+.terafina-banking_section {
+    margin-bottom: 4rem;
+    padding: 3rem 0;
+}
+
+.terafina-banking_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.terafina-banking_image {
+    order: 1;
+}
+
+.terafina-banking_img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(8, 23, 40, 0.15);
+}
+
+.terafina-banking_text {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
 .terafina-stats_grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -968,6 +999,20 @@ label {
     .ebook-content_grid {
         grid-template-columns: 1fr;
         gap: 3rem;
+    }
+
+    .terafina-banking_content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .terafina-banking_image {
+        order: 2;
+    }
+
+    .terafina-banking_text {
+        order: 1;
+        text-align: center;
     }
 
     .terafina-stats_grid {
