@@ -576,17 +576,19 @@ label {
     align-items: flex-start;
     gap: 2rem;
     flex-wrap: nowrap;
+    width: 100%;
 }
 
 .terafina-platform_image {
-    max-width: 30%;
-    width: 30%;
+    max-width: 30% !important;
+    width: 30% !important;
+    flex: 0 0 30% !important;
     flex-shrink: 0;
-    flex-basis: 30%;
 }
 
 .terafina-platform_img {
     width: 100%;
+    max-width: 100%;
     height: auto;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(8, 23, 40, 0.15);
@@ -594,9 +596,9 @@ label {
 }
 
 .terafina-platform_text {
-    flex: 1;
-    width: 70%;
-    max-width: 70%;
+    flex: 0 0 70% !important;
+    width: 70% !important;
+    max-width: 70% !important;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
