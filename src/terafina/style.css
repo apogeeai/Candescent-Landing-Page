@@ -379,15 +379,15 @@ label {
 /* Ebook Form Styles */
 .ebook-form_wrapper {
     background-color: var(--base-color-brand--white);
-    padding: 2.5rem;
+    padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 20px 60px rgba(8, 23, 40, 0.15);
     width: 100%;
-    max-width: 480px;
+    max-width: 600px;
 }
 
 .ebook-form_header {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     text-align: center;
 }
 
@@ -398,14 +398,15 @@ label {
 .ebook_form {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
     width: 100%;
 }
 
 .ebook-form_fields {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .ebook-form_field-wrapper {
@@ -424,16 +425,16 @@ label {
 
 .ebook_text-field {
     font-family: 'Ppfragment Variable', Arial, sans-serif;
-    font-size: 1.11rem;
+    font-size: 1rem;
     border: none;
     border-bottom: 1px solid var(--base-color-brand--dark-blue-100);
     font-variation-settings: "wght" 310;
     background-color: transparent;
     border-radius: 0;
     width: 100%;
-    min-height: 3.375rem;
+    min-height: 2.75rem;
     margin-bottom: 0;
-    padding: 1rem 2rem 1rem .75rem;
+    padding: 0.75rem 1.5rem 0.75rem .75rem;
     transition: all .45s cubic-bezier(.25, .46, .45, .94);
 }
 

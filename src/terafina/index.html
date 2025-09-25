@@ -194,15 +194,20 @@
         /* Form */
         .ebook-form_wrapper {
             background-color: var(--base-color-brand--white);
-            padding: 2.5rem;
+            padding: 2rem;
             border-radius: 12px;
             box-shadow: 0 20px 60px rgba(8, 23, 40, 0.15);
             width: 100%;
-            max-width: 480px;
+            max-width: 600px;
         }
-        .ebook-form_header { margin-bottom: 2rem; text-align: center; }
-        .ebook_form { display: flex; flex-direction: column; gap: 2rem; }
-        .ebook-form_fields { display: flex; flex-direction: column; gap: 1.5rem; }
+        .ebook-form_header { margin-bottom: 1.5rem; text-align: center; }
+        .ebook_form { display: flex; flex-direction: column; gap: 1.5rem; }
+        .ebook-form_fields { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 1rem 1.5rem; 
+            margin-bottom: 1rem; 
+        }
         .ebook-form_field-wrapper { display: flex; flex-direction: column; position: relative; }
         .ebook_label {
             margin-bottom: 0.5rem;
@@ -212,20 +217,26 @@
         }
         .ebook_text-field {
             font-family: 'Ppfragment Variable', Arial, sans-serif;
-            font-size: 1.11rem;
+            font-size: 1rem;
             border: none;
             border-bottom: 1px solid var(--text-color--text-primary);
             background-color: transparent;
             width: 100%;
-            min-height: 3.375rem;
-            padding: 1rem 2rem 1rem .75rem;
+            min-height: 2.5rem;
+            padding: 0.75rem 1rem 0.75rem .75rem;
             transition: all .45s ease;
         }
         .ebook_text-field:focus {
             outline: none;
             border-bottom-color: var(--highlight-color-mid-blue--mid-blue-50);
         }
-        .ebook-form_checkbox-wrapper { display: flex; align-items: flex-start; gap: 0.75rem; margin-top: 0.5rem; }
+        .ebook-form_checkbox-wrapper { 
+            display: flex; 
+            align-items: flex-start; 
+            gap: 0.75rem; 
+            margin-top: 0.5rem; 
+            grid-column: 1 / -1; 
+        }
         .ebook_checkbox-label { display: flex; align-items: flex-start; gap: 0.75rem; cursor: pointer; margin-bottom: 0; }
         .ebook_checkbox {
             appearance: none;
@@ -255,7 +266,7 @@
         
         /* Stats */
         .terafina-intro { margin-bottom: 3rem; text-align: center; }
-        .terafina-intro_text { max-width: 60rem; margin: 0 auto; }
+        .terafina-intro_text { max-width: 70rem; margin: 0 auto; }
         .terafina-stats {
             margin-bottom: 4rem;
             padding: 3rem 0;
@@ -476,6 +487,13 @@
             .ebook-hero_title { font-size: 2.25rem; }
             .heading-style-h3 { font-size: 2rem; }
             .ebook-form_wrapper { padding: 2rem; }
+            .ebook-form_fields { 
+                grid-template-columns: 1fr; 
+                gap: 1.5rem; 
+            }
+            .ebook-form_checkbox-wrapper { 
+                grid-column: 1; 
+            }
             .terafina-stats_grid { grid-template-columns: 1fr; gap: 1.5rem; }
             .terafina-stat_number { font-size: 2rem; }
             .terafina-stat_icon { width: 56px; height: 56px; }
@@ -497,31 +515,29 @@
         }
 
         .terafina-platform_content {
-            display: flex !important;
-            align-items: flex-start !important;
-            gap: 2rem !important;
-            width: 100% !important;
-            overflow: hidden;
+            display: flex;
+            align-items: flex-start;
+            gap: 2rem;
+            width: 100%;
         }
 
         .terafina-platform_image {
-            width: 30% !important;
-            max-width: 30% !important;
-            flex: 0 0 30% !important;
-            flex-shrink: 0 !important;
+            flex: 0 0 30%;
+            width: 30%;
+            max-width: 30%;
         }
 
         .terafina-platform_img {
-            width: 100% !important;
-            height: auto !important;
-            border-radius: 12px !important;
-            box-shadow: 0 10px 30px rgba(8, 23, 40, 0.15) !important;
-            display: block !important;
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(8, 23, 40, 0.15);
+            display: block;
         }
 
         .terafina-platform_text {
-            flex: 1 !important;
-            width: 70% !important;
+            flex: 1;
+            width: 70%;
         }
 
         /* Responsive design for platform section */
@@ -543,6 +559,48 @@
                 width: 100%;
                 text-align: center;
             }
+        }
+
+        /* Placeholder Image */
+        .placeholder-image_wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--base-color-neutral--stone-grey-10);
+            border-radius: 12px;
+            padding: 2rem;
+        }
+
+        .placeholder-image_img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(8, 23, 40, 0.1);
+        }
+
+        /* Success Story Section */
+        .section_success-story {
+            background-color: var(--base-color-neutral--stone-grey-10);
+        }
+
+        .testimonials-full-width {
+            max-width: none;
+            width: 100%;
+            position: relative;
+        }
+
+        .apple-logo_wrapper {
+            position: absolute;
+            top: 2rem;
+            left: 2rem;
+            z-index: 2;
+        }
+
+        .apple-logo {
+            width: 60px;
+            height: auto;
+            opacity: 0.8;
         }
     </style>
 </head>
@@ -666,7 +724,7 @@
                         <div class="container-large">
                             <div class="terafina-intro">
                                 <div class="terafina-intro_text">
-                                    <p class="text-size-large text-weight-450">
+                                    <p class="text-size-large text-weight-450" style="text-align:left;"">
                                         Designed with deep integrations, no-code flexibility, and a modern UX, Candescent Terafina helps you acquire more customers, lower costs, and reduce friction—driving measurable ROI through faster onboarding, stronger conversion, and higher product adoption without compromising fraud protection.
                                     </p>
                                 </div>
@@ -692,8 +750,8 @@
                                                 <path d="M12 18V6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                             </svg>
                                         </div>
-                                        <div class="terafina-stat_number">50-60% Lower</div>
-                                        <div class="terafina-stat_label">Implementation Cost</div>
+                                        <div class="terafina-stat_number">50-60%</div>
+                                        <div class="terafina-stat_label">Lower Implementation Cost</div>
                                     </div>
                                     <div class="terafina-stat_item">
                                         <div class="terafina-stat_icon">
@@ -702,8 +760,8 @@
                                                 <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                             </svg>
                                         </div>
-                                        <div class="terafina-stat_number">Works with</div>
-                                        <div class="terafina-stat_label">any core for a 50% quicker go live</div>
+                                        <div class="terafina-stat_number">50%</div>
+                                        <div class="terafina-stat_label">quicker time to go live</div>
                                     </div>
                                     <div class="terafina-stat_item">
                                         <div class="terafina-stat_icon">
@@ -728,14 +786,14 @@
                             <div class="terafina-platform_section">
                                 <div class="terafina-platform_content">
                                     <div class="terafina-platform_image">
-                                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&h=600&q=80" alt="Modern Banking Technology Platform" class="terafina-platform_img">
+                                        <img src="/src/terafina/img/15decc15-7f2d-4832-8a9b-6738cee80f3a.jpg" alt="Modern Banking Technology Platform" class="terafina-platform_img">
                                     </div>
                                     <div class="terafina-platform_text">
                                         <p class="text-size-large text-weight-450">
                                             Candescent Terafina empowers financial institutions to transform fast without compromising security. Its mobile-first, no-code platform blends enterprise-grade compliance with flexible APIs to accelerate adoption and completion rates.
+                                            By reducing manual work, streamlining workflows, and improving SLA performance, Terafina enables institutions to scale growth, cut costs, and deliver measurable ROI across every channel.
                                         </p>
                                         <p class="text-size-regular">
-                                            By reducing manual work, streamlining workflows, and improving SLA performance, Terafina enables institutions to scale growth, cut costs, and deliver measurable ROI across every channel.
                                         </p>
                                     </div>
                                 </div>
@@ -785,23 +843,8 @@
                                         </div>
                                     </div>
                                     <div class="ebook-content_column-right">
-                                        <div class="ebook-testimonials_wrapper">
-                                            <div class="ebook-testimonials_header">
-                                                <div class="text-size-small text-weight-450 text-color-muted">SUCCESS STORY</div>
-                                            </div>
-                                            <div class="ebook-testimonials_list">
-                                                <div class="ebook-testimonial_item">
-                                                    <h3 class="terafina-case-study_title">Account Opening in a New York Minute:</h3>
-                                                    <div class="ebook-testimonial_quote">
-                                                        How Apple Bank modernized account opening, reduced manual reviews and gave their bankers time back with Terafina.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="terafina-cta_section">
-                                                <div class="terafina-cta_text">
-                                                    <p>Ready to see the difference? Candescent Terafina helps you leave behind legacy constraints and unlock scalable growth.</p>
-                                                </div>
-                                            </div>
+                                        <div class="placeholder-image_wrapper">
+                                            <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&h=600&q=80" alt="Modern Financial Technology" class="placeholder-image_img">
                                         </div>
                                     </div>
                                 </div>
@@ -812,6 +855,37 @@
             </section>
         </main>
     </div>
+
+    <!-- Success Story Section -->
+    <section class="section_success-story">
+        <div class="padding-global">
+            <div class="container-large">
+                <div class="padding-section-medium">
+                    <div class="ebook-testimonials_wrapper testimonials-full-width">
+                        <div class="apple-logo_wrapper">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/120px-Apple_logo_black.svg.png" alt="Apple Bank Logo" class="apple-logo">
+                        </div>
+                        <div class="ebook-testimonials_header">
+                            <div class="text-size-small text-weight-450 text-color-muted">SUCCESS STORY</div>
+                        </div>
+                        <div class="ebook-testimonials_list">
+                            <div class="ebook-testimonial_item">
+                                <h3 class="terafina-case-study_title">Account Opening in a New York Minute:</h3>
+                                <div class="ebook-testimonial_quote">
+                                    How Apple Bank modernized account opening, reduced manual reviews and gave their bankers time back with Terafina.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="terafina-cta_section">
+                            <div class="terafina-cta_text">
+                                <p>Ready to see the difference? Candescent Terafina helps you leave behind legacy constraints and unlock scalable growth.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
