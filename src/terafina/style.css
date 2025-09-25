@@ -576,6 +576,7 @@ label {
     align-items: flex-start !important;
     gap: 2rem !important;
     width: 100% !important;
+    overflow: hidden;
 }
 
 .terafina-platform_image {

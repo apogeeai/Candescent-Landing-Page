@@ -490,6 +490,60 @@
             .terafina-stat_number { font-size: 1.75rem; }
             .ebook-form_wrapper { padding: 1.5rem; }
         }
+
+        /* Terafina Platform Section */
+        .terafina-platform_section {
+            margin-bottom: 60px;
+        }
+
+        .terafina-platform_content {
+            display: flex !important;
+            align-items: flex-start !important;
+            gap: 2rem !important;
+            width: 100% !important;
+            overflow: hidden;
+        }
+
+        .terafina-platform_image {
+            width: 30% !important;
+            max-width: 30% !important;
+            flex: 0 0 30% !important;
+            flex-shrink: 0 !important;
+        }
+
+        .terafina-platform_img {
+            width: 100% !important;
+            height: auto !important;
+            border-radius: 12px !important;
+            box-shadow: 0 10px 30px rgba(8, 23, 40, 0.15) !important;
+            display: block !important;
+        }
+
+        .terafina-platform_text {
+            flex: 1 !important;
+            width: 70% !important;
+        }
+
+        /* Responsive design for platform section */
+        @media screen and (max-width: 991px) {
+            .terafina-platform_content {
+                flex-direction: column;
+                gap: 2rem;
+                align-items: center;
+            }
+            
+            .terafina-platform_image {
+                flex: none;
+                width: 100%;
+                max-width: 500px;
+            }
+            
+            .terafina-platform_text {
+                flex: none;
+                width: 100%;
+                text-align: center;
+            }
+        }
     </style>
 </head>
 
@@ -674,7 +728,7 @@
                             <div class="terafina-platform_section">
                                 <div class="terafina-platform_content">
                                     <div class="terafina-platform_image">
-                                        <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&h=600&q=80" alt="Modern Banking Technology Platform" class="terafina-platform_img">
+                                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&h=600&q=80" alt="Modern Banking Technology Platform" class="terafina-platform_img">
                                     </div>
                                     <div class="terafina-platform_text">
                                         <p class="text-size-large text-weight-450">

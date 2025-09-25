@@ -1091,3 +1091,59 @@ label {
         font-size: 1.125rem;
     }
 }
+
+/* Terafina Platform Section */
+.terafina-platform_section {
+    margin-bottom: 60px;
+}
+
+.terafina-platform_content {
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 2rem !important;
+    width: 100% !important;
+    overflow: hidden;
+}
+
+.terafina-platform_image {
+    width: 30% !important;
+    max-width: 30% !important;
+    flex: 0 0 30% !important;
+    flex-shrink: 0 !important;
+}
+
+.terafina-platform_img {
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 12px !important;
+    box-shadow: 0 10px 30px rgba(8, 23, 40, 0.15) !important;
+    display: block !important;
+}
+
+.terafina-platform_text {
+    flex: 1 !important;
+    width: 70% !important;
+}
+
+/* Responsive design for platform section */
+@media screen and (max-width: 991px) {
+    .terafina-platform_content {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+    
+    .terafina-platform_image {
+        flex: none;
+        width: 100%;
+        max-width: 500px;
+        float: none;
+    }
+    
+    .terafina-platform_text {
+        flex: none;
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+    }
+}
