@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta class="mktoString" id="PageTitle" mktoModuleScope="true" mktoname="Page Title" default="Candescent | Landing Page Template" />
+    <title>${PageTitle}</title>
+
+  <link rel="icon" href="https://www.candescent.com/themes/custom/uol/favicon/favicon.ico" type="image/x-icon" />
+  <link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--Header-->
+  <meta class="mktoString" id="LogoLink" mktoName="Candescent Logo Link" default="https://www.candescent.com/"> 
+
+  <!--Banner-->
+  <meta class="mktoBoolean" id="BannerFullWidth" mktoName="Banner Section" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show"> 
+  <meta class="mktoString" id="SecondaryLogoLink" mktoName="Secondary Logo Link" default="https://www.applebank.com/">
+  <meta class="mktoBoolean" id="ShowSecondaryLogo" mktoName="Secondary Logo" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">  
+  <meta class="mktoString" id="BannerCTALink" mktoName="Banner CTA Link" default="https://terafina.candescent.com/contact">
+  <meta class="mktoBoolean" id="ShowBottomBannerText" mktoName="Banner Bottom Text" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">  
+  <meta class="mktoString" id="BannerImgFullWidth" mktoName="Banner Image" default="https://info.candescent.com/rs/408-TKM-999/images/banner1.png?version=0">
+
+
+  <!--Four Columns Icons-->
+  <meta class="mktoBoolean" id="FourColsIconsSection" mktoName="4 Columns Icons Section" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show"> 
+
+  <meta class="mktoBoolean" id="IntroText" mktoName="Intro Text" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show"> 
+
+
+  <!--Four Columns Heading + Text-->
+  <meta class="mktoBoolean" id="FourColsHeadingSection" mktoName="4 Columns Heading + Text Section" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show"> 
+
+  <!--Block Left Image-->
+  <meta class="mktoBoolean" id="BlockLeftImageSection" mktoName="Block Left Image Section" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show"> 
+
+  <!--Block Right Image-->
+  <meta class="mktoBoolean" id="BlockRightImageSection" mktoName="Block Right Image Section" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show"> 
+
+  <!-- Text x 3 Columns-->
+  <meta class="mktoBoolean" id="TextThreeColumnsSection" mktoName="Text + 3 Columns Section" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show"> 
+
+  <!--Heading + 2 Rows-->
+  <meta class="mktoBoolean" id="HeadingTwoRowsSection" mktoName="Heading + 2 Rows Section" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show"> 
+
+    <!--Heading + 2 Rows-->
+   <meta class="mktoBoolean" id="TableSection" mktoName="Heading + 2 Rows Section" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show"> 
+
+  <!--Form-->
+  <meta class="mktoBoolean" id="FormSection" mktoName="Form Section" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show"> 
+
+  <meta class="mktoBoolean" id="FormSection2" mktoName="Form Section2" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show"> 
+
+
+ <!-- Google tag (gtag.js) -->
+
+ <!-- Google tag (gtag.js) -->
+  <style>
+
+  @font-face {
+  font-family: 'Ppfragment Variable';
+  src: url('https://cdn.prod.website-files.com/672c8bafbeffacdb79421b7d/67363dbdccc085fcae98dc00_PPFragment-Variable.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+  }
+
+  @font-face {
+  font-family: 'Ppfragment SemiBold';
+  src: url('https://cdn.prod.website-files.com/672c8bafbeffacdb79421b7d/673c7aef0ea079d1d4d615cb_PPFragment-GlareSemiBold.ttf') format('truetype'),
+    url('https://cdn.prod.website-files.com/672c8bafbeffacdb79421b7d/673c7aefc2b5ae48a94e2e54_PPFragment-SansSemiBold.ttf') format('truetype');
+  font-weight:600;
+  font-style: normal;
+  font-display: swap;
+  }
+
+  @font-face {
+  font-family: 'Ppfragment Regular';
+  src: url('https://cdn.prod.website-files.com/672c8bafbeffacdb79421b7d/673c7aefd20244d414eaa952_PPFragment-GlareRegular.ttf') format('truetype'),
+    url('https://cdn.prod.website-files.com/672c8bafbeffacdb79421b7d/673c7aeffe3f45d7548f8395_PPFragment-SansRegular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  }
+
+  /*General CSS*/
+
+  :root {
+    --bs-body-font-family:'Ppfragment Variable';
+  }
+  html, body {
+    font-family: 'Ppfragment Variable';
+    font-size:1.125rem;
+    line-height: 130%;
+    font-weight:300;
+  }
+
+  .container-wrapper {
+    padding:0% 4%;
+    margin:0 auto;
+    max-width: 1300px;
+  }
+
+    h1 {
+    font-size: 4rem; 
+    line-height:130%;
+
+
+  }
+  .lead {
+    font-size:1.4rem;
+    margin-bottom:20px;
+    font-family: 'Ppfragment Variable';
+    font-weight:300;
+    line-height:130%;
+  }
+    h2 {font-size: 2.8rem;}
+    h3 {font-size:2.2rem;}
+    h4 {font-size:1.4rem;}
+
+    h1, h2, h3, h4, h5 {
+    font-family: 'Ppfragment Regular';
+    line-height:130%;;
+    font-weight:500;
+
+    }
+    a {text-decoration: none;}
+    em {
+     font-family: 'Ppfragment Variable';
+      font-style: italic;
+    }
+  li::marker {
+  color:#ade3f6;
+  }
+   ::-moz-selection { /* Code for Firefox */
+
+      background-color:blue;
+    color:#ffffff;
+    }
+
+    ::selection {
+      background-color: blue;
+    color:#ffffff;
+    }
+
+
+  /*Header - Logo*/
+
+  .header-logo {
+    margin-bottom:115px;
+  }
+
+  /*Banner*/
+  .secondary-logo {
+    margin-bottom: 40px;
+  }
+    .banner-hero {
+      display:${BannerFullWidth};
+      background-color: #ffcf23;
+    }
+
+   .banner-fullwidth {
+    padding: 20px 0px 90px;
+    background: url("${BannerImgFullWidth}") top center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    height: auto; /* Consider using min-height or a fixed height for visual control */
+  }
+
+  .bottom-banner-text {
+    margin-top:200px;
+    color:#ffffff;
+    font-size:22px;
+    line-height:130%;
+  }
+
+  /* Four Columns Icons*/
+  .four-cols-icons {
+    padding:100px 0px 60px;
+    color:#ffffff;
+    background-color: #071727;
+    display: ${FourColsIconsSection};
+  }
+
+  .four-cols-icons .four-col-icon-heading {
+    font-size:50px;
+    color:#ffffff;
+    padding: 20px 0px;
+    font-family: 'Ppfragment Regular';
+    line-height:130%;;
+
+  }
+
+  /*Four Cols Heading + Text*/
+  .four-cols-heading-text {
+    padding: 80px 0px 80px;
+    color:#ffffff;
+    display: ${FourColsHeadingSection};
+    background-color: #071727;
+  }
+
+
+  /*Block Left Image*/
+
+  .block-left-image {
+    color:#ffffff;
+    padding:80px 0px;
+    align-items: center;
+    display: ${BlockLeftImageSection};
+    background-color: #081728;
+  }
+
+  .block-left-image hr {
+    border-bottom: 1px solid #ade3f6;
+    height:1px;
+    margin: 40px 0px;
+
+  }
+  .block-left-image p,
+  .block-left-image ul li {
+    font-size:22px;
+    line-height:130%;
+  }
+
+  /*Block Right Image*/
+
+  .block-right-image {
+    color:#081728;
+    padding:80px 0px;
+    display: ${BlockRightImageSection};
+    background-color:#EFECED;
+  }
+  .block-list-group {
+    padding-top:30px;
+  }
+  .list-group {
+    display: flex;
+    flex-direction:row;
+    gap: 20px;
+    margin: 0 auto 40px auto;
+  }
+
+  .list-icon {
+    flex-shrink: 0;
+    width: 50px;
+    margin-top:-10px;
+  }
+
+  .list-icon img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .list-text {
+    flex: 1;
+  }
+  .list-text p {
+    margin: 0;
+  }
+
+    /*Fullwidth Text x 3 Columns*/
+  .fullwidth-text-three-columns {
+    padding:100px 0px;
+    color:#081728;
+    display: ${TextThreeColumnsSection};
+    background-color: #efeced;
+  }
+
+  .fullwidth-text-three-columns .three-col-heading {
+  margin-bottom:20px;
+  }
+
+  /*Heading + 2 Rows*/
+  .heading-two-rows {
+    padding:100px 0px;
+    color:#ffffff;
+    display: ${HeadingTwoRowsSection};
+    background-color: #081728;
+  }
+  .heading-two-rows h3{
+    color:#5a94e8;
+  }
+  .heading-two-rows p {
+    font-size:24px;
+    color:#ffffff;
+    line-height:130%;
+  }
+
+
+  /*Fullwidth Form*/
+  .fullwidth-form  {
+    padding:120px 0px;
+    background-color:#254978;
+    color:#ffffff;
+    display: ${FormSection};
+  }
+
+  /*Button*/
+     .button{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  .button {
+    font-size: 1rem;
+    color: #081728!important;
+    padding: 1rem 2rem;
+    font-family: 'Ppfragment Regular';
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 0px;
+    text-align:center;
+  }
+
+  .button-yellow {
+    border:1px solid #f3c521!important;
+    background: #f3c521!important;
+    color: #081728!important;
+
+  }
+
+  .button-yellow:hover {
+    border:1px solid #fd8!important;
+    background: #fd8!important;
+    color: #081728!important;
+
+  }
+
+  .button-outline {
+  border:1px solid #f3c521!important;
+  background:transparent!important;
+  color: #f3c521!important;
+
+  }
+
+  .button-outline:hover {
+    border:1px solid #fd8!important;
+    background:#fd8!important;
+    color: #081728!important;
+  }
+
+  /*mktoForm*/
+
+    .mktoForm .mktoGutter {display:none !important;}
+
+    .mktoForm {
+      width:100% !important;
+      margin:0!important;
+      padding:0!important;
+    }
+    .mktoFormRow, .mktoFieldWrap, .mktoFormCol, .mktoButtonRow, .mktoCheckboxList, .mktoHtmlText {
+      width:100%!important;
+    }
+
+    .mktoForm .mktoAsterix {
+      display: none!important;
+    }
+    .mktoForm .mktoFormRow {
+      display: block;
+    }
+
+
+    .mktoButtonWrap {
+      margin-left:0px!important;
+    }
+
+    .mktoButtonRow {
+    margin-top:40px!important;
+    text-align:center!important;
+    }
+
+
+
+  .mktoForm .mktoButtonWrap.mktoSimple .mktoButton, .mktoButton {
+
+    background: #f3c521!important;
+    color: #081728!important;
+    font-family: 'Ppfragment Variable';
+    display: inline-flex!important;
+    justify-content: center!important;
+    align-items: center!important;
+    position: relative!important;
+    overflow: hidden!important;
+    transition: transform .1s ease-in-out!important;
+    will-change: transform!important;
+    border:1px solid #f3c521!important;
+    min-width:180px!important;
+    border-radius: 0px;
+
+  }
+  .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:hover, .mktoButton:hover {
+      background: #f3c521!important;
+      color: #081728!important;
+      border:1px solid #f3c521!important;
+  }
+
+
+    /*Inputfields*/
+    .mktoForm input[type=url], 
+    .mktoForm input[type=text], 
+    .mktoForm input[type=date], 
+    .mktoForm input[type=tel], 
+    .mktoForm input[type=email], 
+    .mktoForm input[type=number], 
+    .mktoForm select.mktoField {
+    padding: 4px 10px !important;
+    height: 40px!important;
+    width:100%!important;
+    font-family: 'Ppfragment Variable';
+    color:#081728!important;
+    background: transparent!important;
+    border-bottom: 1px solid #ACE2F5!important;
+    box-shadow:none!important;
+    border-radius: 0px;
+    }
+
+    .mktoForm textarea.mktoField {
+      height:auto!important;
+    }
+
+    .mktoForm textarea.mktoField{
+      padding: 10px 10px !important;
+      width:100%!important;
+      font-family: 'Ppfragment Variable';
+      font-weight: 400!important;
+      color:#ACE2F5!important;
+      background: transparent!important;
+      border-bottom: 1px solid #ACE2F5 !important;
+      box-shadow:none!important;
+      border-radius: 0px;
+    }
+    .mktoForm textarea::placeholder,
+    .mktoForm input::placeholder {
+     color:#e4f4fa!important;
+    }
+    form input:not([type=checkbox]):not([type=radio]):not([type=submit]):focus, 
+    form textarea:focus, 
+    form select:focus, 
+    form.mktoForm input:not([type=checkbox]):not([type=radio]):not([type=submit]):focus, 
+    form.mktoForm textarea:focus, 
+    form.mktoForm select:focus {
+      border-bottom:1px solid #ACE2F5!important;
+      outline:none!important;
+    }
+
+
+
+    .mktoForm .mktoLabel,
+    .mktoForm .mktoRequiredField label.mktoLabel {
+      margin-bottom: 10px;
+      font-weight: normal !important;
+      color:#ACE2F5!important;
+     font-family: 'Ppfragment Variable';
+      width:100%!important;
+    }
+
+    .mktoForm label a {
+      padding: 0px !important;
+    }
+
+    .mktoForm .mktoOffset {
+      display: none !important;
+    }
+
+    .mktoForm .mktoRadioList > label,
+    .mktoForm .mktoCheckboxList > label {
+      margin-top: 0px !important;
+      margin-bottom: 0px !important;
+    }
+
+    .mktoForm .mktoRadioList > label > .mktoAsterix,
+    .mktoForm .mktoCheckboxList > label > .mktoAsterix {
+      display: none !important;
+    }
+
+
+
+     /* Footer */
+
+   footer {
+      background-color:#081728;
+      padding:5% 0%;
+     }
+
+   footer .button {
+    padding: .5rem 2rem;
+  }
+
+   footer ul {
+    list-style:none;
+    padding-left:0px;
+   }
+   .footer-links ul li a {
+    font-size:1rem;
+    color:#ffffff;
+   }
+
+  .footer-links ul li a:hover {
+    color:#ffcf23;
+  }
+
+   footer ul li{
+    padding-bottom:20px;
+
+   }
+  .line-divider {
+    background-color: #ade3f6;
+    width: 100%;
+    height: 1px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .footer-bottom, .footer-bottom a {
+      color:#ffffff;
+      text-decoration:none;
+      font-size:.875rem;
+    }
+
+   .footer-bottom a:hover {
+      color:#ffffff;
+      text-decoration:underline;
+    }
+
+   /* Keep Footer at bottom*/
+    #footer {
+      flex-shrink: 0;
+    }
+    #content-wrap {
+      flex: 1 0 auto;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+
+    .footer-bottom ul.list-links-2{
+      list-style: none;
+      display:inline-flex;
+      padding-left:0px;
+    }
+
+    .footer-bottom ul.list-links-2 {
+      text-align:left;
+    }
+    .footer-bottom ul.list-links-2 li:not(:last-child) {
+        margin-right:20px;
+    }
+
+    .copyright-wrap {
+      text-align:right;
+    }
+
+    @media (max-width: 768px) {
+
+    .copyright-wrap{
+      text-align:left;
+      margin-top:15px;
+    }
+
+  .footer-bottom ul.list-links-2 {
+  display:block;
+  text-align: left;
+  margin-right:0px;
+  padding-left:0px;
+  margin-top:15px;
+  }
+    }
+
+  @media screen and (max-width: 767px) {
+    h1 {font-size: 50px!important;}
+    h2 {font-size: 40px!important;}
+    h3 {font-size:32px!important;}
+    h4 {font-size:24px!important;}
+
+  .banner-fullwidth {
+    background-position: top left!important;
+
+  }
+  }
+
+  /* Mobile Responsive for 3-column layout */
+  @media (max-width: 1300px) {
+    .four-cols-heading-text .col-md-4 {
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-top: 30px !important;
+    }
+
+    .four-cols-heading-text .col-md-4:first-of-type {
+      margin-top: 40px !important;
+    }
+
+    .four-cols-heading-text h2 {
+      font-size: 2rem;
+    }
+
+    .four-cols-heading-text h4 {
+      font-size: 1.2rem;
+    }
+  }
+
+  /* Comparison Table Styles */
+  .comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 40px;
+    font-size: 1.125rem;
+    background-color: #081728;
+    border-radius: 0;
+    overflow: hidden;
+  }
+
+  .comparison-table th {
+    background-color:#081728;
+    color: #FFF;
+    padding: 20px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 1.3rem;
+  }
+
+  .comparison-table td {
+    padding: 20px;
+    color: #ffffff;
+    text-align: left;
+    background-color: #081728;
+  }
+
+  .comparison-table tbody tr {
+    border-top: 1px solid #ffffff;
+  }
+
+  .comparison-table tbody tr:hover {
+    opacity: 0.95;
+  }
+
+  .comparison-table td:first-child {
+    font-weight: 600;
+    color: #ffffff;
+  }
+
+  .table-section-header {
+    margin-bottom: 30px;
+    color: #ffffff;
+    text-align: left;
+  }
+
+  .comparison-table-section {
+    padding: 80px 0px;
+    background-color: #071727;
+  }
+
+  /* Mobile Responsive Table */
+  @media (max-width: 768px) {
+    .comparison-table {
+      font-size: 0.9rem;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+      padding: 12px 10px;
+    }
+
+    .comparison-table th {
+      font-size: 1rem;
+      text-align: left;
+    }
+
+    /* Stack table on mobile */
+    .comparison-table thead {
+      display: none;
+    }
+
+    .comparison-table tbody tr {
+      display: block;
+      margin-bottom: 20px;
+      border: 2px solid #e0e0e0;
+      border-radius: 0;
+      overflow: hidden;
+      background-color: #ffffff;
+    }
+
+    /* Blue highlight for specific rows on mobile */
+    .comparison-table tbody tr:nth-child(2),
+    .comparison-table tbody tr:nth-child(4),
+    .comparison-table tbody tr:nth-child(6) {
+      background-color: #e8f4fd;
+    }
+
+    .comparison-table td {
+      display: flex;
+      padding: 12px;
+      border-left: none;
+      border-right: none;
+      border-bottom: none;
+      border-top: 1px solid #e0e0e0;
+      background-color: inherit !important;
+      text-align: left;
+      color: #081728;
+    }
+
+    .comparison-table td:before {
+      content: attr(data-label);
+      font-weight: 600;
+      margin-right: 10px;
+      color: #000;
+    }
+
+    .comparison-table td:first-child {
+      background-color: #081728 !important;
+      color: #FFF;
+      font-weight: 600;
+      justify-content: left;
+ 
+    }
+
+    .comparison-table td:first-child:before {
+      display: none;
+    }
+  }
+
+
+    </style>
+   </head>
+  <body>
+
+    <!-- Google Tag Manager (noscript) -->
+
+    <!-- End Google Tag Manager (noscript) -->
+  <main>
+  <!--Banner-->
+    <section class="banner-fullwidth" id="banner-hero">
+       <div class="container-fluid">
+        <div class="container-wrapper">
+         <div class="row">
+          <div class="col-md-12">
+             <div class="logo"><a class="header-logo" href="${LogoLink}"><img src="https://info.candescent.com/rs/408-TKM-999/images/logo-white.png?version=0" width="245" class="header-logo" alt="logo"/></a></div>
+          </div>
+         </div>
+         <div class="row">
+          <div class="col-md-6 text-left">
+             <div style="display: ${ShowSecondaryLogo};">
+              <div class="secondary-logo"><a href="${SecondaryLogoLink}">
+              <div class="mktoText text-center" mktoName="Secondary Logo" id="secondary-logo">
+              <img src="https://info.candescent.com/rs/408-TKM-999/images/logo2.png?version=0" width="220" alt="logo"/>
+              </div>
+              </a>
+              </div>
+             </div>
+             <div>
+              <div class="mktoText banner-headline" id="hero-headline" mktoName="Banner Headline" >
+               <h1 style="color:#ADE3F6;">Seamless Openings, Exceptional Experiences</h1>
+              </div>
+             </div>
+             <div>
+              <div class="mktoText lead mb-5" id="hero-subheadline" mktoName="Banner Subheadline" >
+               <div style="color:#ffffff;">Faster onboarding, leading UX, stronger ROI
+               </div>
+              </div>
+             </div>
+             <div>
+               <a class="button button-yellow" href="#form" target="_blank">
+                <span class="mktoText" id="banner-cta" mktoName="Banner CTA">
+               Request a Demo
+                 </span>
+
+               </a> 
+             </div>
+             <div style="display: ${ShowBottomBannerText};">
+              <div class="mktoText bottom-banner-text" id="banner-bottom-text" mktoName="Banner Bottom Text" >
+               <p>Designed with deep integrations, no-code flexibility, and a modern UX, Candescent Terafina helps you acquire more customers, lower costs, and reduce friction—driving measurable ROI through faster onboarding, stronger conversion, and higher product adoption without compromising fraud protection.
+               </p>
+              </div>
+             </div>
+          </div>
+         </div>
+        </div>
+       </div>
+    </section>
+    <!--/Banner-->
+
+
+
+<!--4 Columns - Heading + Text-->
+<section class="four-cols-heading-text four-col-icon-heading-bg-color">
+  <div class="container-fluid">
+     <div class="container-wrapper">
+      <div class="row justify-content-center">
+      <div  id="intro-text" mktoName="Intro Text">
+      <h2 style="text-align:center;">When legacy slows you down, members notice, and it becomes your problem to solve. </h2>
+<br><br>
+    <h4>Too many financial institutions are stuck with outdated digital platforms that slow innovation and frustrate members. Aging single-tenant architecture, slow-release cycles, and inconsistent UX make it harder to deliver on your digital promise.  
+    </h4>
+  </div>
+     <!--Col 1-->
+     <div class="col-md-4 mb-3" style="margin-top: 60px;">
+
+        <div class="text-center">
+
+          <div class="" id="four-col-text-icon-1-icon 2b" mktoName="Intro Text - Icon 1"><img src="https://info.candescent.com/rs/408-TKM-999/images/icon7.png?version=0" width="80" class="img-fluid" alt="Icon 1">
+          </div>
+           <div class="lead mt-3" id="four-col-text-icon-1b" mktoName="Intro Text - Text 1">
+            <p>Faster deployments	
+            </p>
+         </div>
+      </div>
+     </div>
+     <!--Col 2-->
+     <div class="col-md-4 mb-3" style="margin-top: 60px;">
+
+      <div class="text-center">
+       <div class="" id="four-col-text-icon-2-icon2b" mktoName="Intro Text - Icon 2"><img src="https://info.candescent.com/rs/408-TKM-999/images/icon5.png?version=0" height="87" alt="Icon 2">
+          </div>
+           <div class="lead  mt-3" id="four-col-text-icon-2b" mktoName="Intro Text - Text 2">
+            <p>Higher digital<br>adoption
+            </p>
+           </div>
+      </div>
+     </div>
+     <!--Col 3-->
+     <div class="col-md-4 mb-3" style="margin-top: 60px;">
+      <div class="text-center">
+       <div class="" id="four-col-text-icon-3-icon 2b" mktoName="Intro Text - Icon 3"><img src="https://info.candescent.com/rs/408-TKM-999/images/icon6.png?version=0" height="87" alt="Icon 3">
+          </div>
+           <div class=" lead  mt-3" id="four-col-text-icon-3b" mktoName="Intro Text - Text 3">
+            <p>Fewer support<br>tickets
+            </p>
+           </div>
+
+
+
+
+
+       </div>
+      </div>
+     </div>
+  </div>
+ </section>
+ <!--4 Columns - Icons + Text-->
+
+
+
+
+<!--Block Left Image-->
+<section class="block-left-image block-left-image-bg-color">
+   <div class="container-fluid">
+      <div class="container-wrapper">
+         <div class="row">
+            <div class="col-md-5 mb-4">
+               <div class="mktoText" mktoName="Block Left Image - Image" id="left-block-photo"><img src="https://info.candescent.com/rs/408-TKM-999/images/banner2.png?version=0" class="img-fluid" alt="Image"></div>
+            </div>
+      <div class="col-md-1"></div>
+            <div class="col-md-6">
+               <div class="content-block-row-copy">
+                  <div class="mktoText" id="content-block-left-text" mktoName="Block Left Image - Text">
+                     <h2>Client Overview</h2>
+                     <p>Designed with deep integrations, no-code flexibility, and a modern UX, Candescent Terafina helps you acquire more customers, lower costs, and reduce friction—driving measurable ROI through faster onboarding, stronger conversion, and higher product adoption without compromising fraud protection.</p>
+                     <hr>
+            <h2>The Opportunity</h2>
+            <ul>
+            <li>Account openings took 45–60 minutes</li>
+            <li>Customers frustrated by delays; employees bogged down in manual work</li>
+            <li>80% of applications required manual review</li>
+            <li>Fraud remained a top concern in a highly regulated market</li>
+
+            </ul>
+
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<!--/Block Left Image-->
+
+ <!--Block Right Image-->
+    <section class="block-right-image block-right-bg-color">
+        <div class="container-fluid">
+    <div class="container-wrapper">
+          <div class="row">
+
+              <div class="col-md-6">
+                <div class="content-block-row-copy">
+                    <div class="mktoText" id="content-block-right-headline-1" mktoName="Block Right Image - Heading">
+                        <h2>Key Benefits at a Glance</h2>
+                    </div>
+
+          <div class="block-list-group">
+            <div class="list-group">
+               <div class="list-icon">
+                <img src="https://info.candescent.com/rs/408-TKM-999/images/artboard.png?version=0" class="img-fluid" width="50" alt="Image">
+               </div>
+               <div class="list-text">
+                <div class="mktoText" id="content-block-right-text-1" mktoName="Block Right Image - Text 1">
+                 <h4>Omni-channel by Design:</h4>
+                 <p>One platform across digital, branch, and call center for seamless onboarding</p>
+                </div>
+               </div>
+            </div>
+            <div class="list-group">
+               <div class="list-icon">
+                <img src="https://info.candescent.com/rs/408-TKM-999/images/artboard.png?version=0" class="img-fluid" width="50" alt="Image">
+               </div>
+               <div class="list-text">
+                <div class="mktoText" id="content-block-right-text-2" mktoName="Block Right Image - Text 2">
+                <h4>Fast, Cost-Efficient Deployment:</h4>
+                <p>Go live in weeks at up to 60% lower implementation cost than legacy vendors</p>
+                </div>
+               </div>
+            </div>
+            <div class="list-group">
+               <div class="list-icon">
+                <img src="https://info.candescent.com/rs/408-TKM-999/images/artboard.png?version=0" class="img-fluid" width="50" alt="Image">
+               </div>
+               <div class="list-text">
+                <div class="mktoText" id="content-block-right-text-3" mktoName="Block Right Image - Text 3">
+                <h4>Modern UX that Converts:</h4>
+                <p>Mobile-first design reduces abandonment and drives higher completion rates</p>
+                </div>
+               </div>
+            </div>
+            <div class="list-group">
+               <div class="list-icon">
+                <img src="https://info.candescent.com/rs/408-TKM-999/images/artboard.png?version=0" class="img-fluid" width="50" alt="Image">
+               </div>
+               <div class="list-text">
+                <div class="mktoText" id="content-block-right-text-4" mktoName="Block Right Image - Text 4">
+                <h4>Proven ROI:</h4>
+                <p>192%-225% digital deposit growth and 75% faster branch account openings</p>
+                </div>
+               </div>
+            </div>
+          </div>
+
+                </div>
+              </div>
+
+          <div class="col-md-6 mt-4">
+                <div class="mktoText" mktoName="Block Right Image + Text - Photo" id="right-block-photo"><img src="https://info.candescent.com/rs/408-TKM-999/images/laptop2.png?version=0" class="img-fluid" alt="Image"></div>
+            </div>
+
+
+          </div>
+    </div>
+        </div>
+    </section>
+    <!--/Block Right Image-->
+
+  <!--Text + 3 Columns-->
+  <section class="fullwidth-text-three-columns fullwidth-text-three-columns-bg-color">
+     <div class="container-fluid">
+      <div class="container-wrapper">
+       <div class="row">
+        <div class="col-md-7">
+             <div class="mktoText" id="fullwidthtext-heading" mktoName="Text + 3 Columns - Heading">
+              <h2>The Solution</h2>
+             </div>
+             <div class="my-3">
+              <div class="mktoText" id="fullwidthtext-text" mktoName="Text + 3 Columns - Subheading">
+                 <div>Apple Bank partnered with Candescent to implement a next-generation account opening
+                 platform designed with extensibility, automation and fraud prevention at its core.<br/>
+                 <br/><br/>
+                 <span style="color:#5A94E8;">The Deployment focused on:</span></div>
+              </div>
+             </div>
+        </div>
+        <div class="col-md-5"></div>
+       </div>
+       <div class="row justify-content-center">
+         <!--Col 1-->
+         <div class="col-md-4 mb-3">
+          <div class="text-left">
+           <div class="mktoText three-col-heading" id="three-col-heading-1" mktoName="Text + 3 Columns - Heading 1">
+            <h4>Scalability for expansion</h4>
+           </div>
+           <div class="mktoText" id="three-col-text-1" mktoName="Text + 3 Columns - Text 1">
+            <p>which required automation of operational tasks including application analysis, document archiving and automation of data to monitoring systems.</p>
+           </div>
+          </div>
+         </div>
+         <!--Col 2-->
+         <div class="col-md-4 mb-3">
+          <div class="text-left">
+           <div class="mktoText three-col-heading" id="three-col-heading-2" mktoName="Text + 3 Columns - Heading 2">
+            <h4>Extensible integrations</h4>
+           </div>
+           <div class="mktoText" id="three-col-text-2" mktoName="Text + 3 Columns - Text 2">
+            <p>with 110+ APIs, enabling configurability, compliance and business process improvement, doubling throughput without increasing resources.</p>
+           </div>
+          </div>
+         </div>
+         <!--Col 3-->
+         <div class="col-md-4 mb-3">
+          <div class="text-left">
+           <div class="mktoText three-col-heading" id="three-col-heading-3" mktoName="Text + 3 Columns - Heading 3">
+            <h4>Built-in fraud detection</h4>
+           </div>
+           <div class="mktoText" id="three-col-text-3" mktoName="Text + 3 Columns - Text 3">
+            <p>powered by Candescent’s ecosystem to identify risk earlier without slowing legitimate applicants down.</p>
+           </div>
+          </div>
+         </div>
+      </div>
+      </div>
+     </div>
+  </section>
+  <!--Fullwidth Text Section-->
+
+
+
+<!--TableSection-->
+<section class="comparison-table-section">
+  <div class="container-fluid">
+     <div class="container-wrapper">
+      <div class="row">
+       <div class="col-12">
+        <div class="mktoText" id="comparison-table-heading" mktoName="Comparison Table - Heading">
+           <h2 class="table-section-header">Make the switch that modernizes every channel</h2>
+          </div>
+
+          <div class="mktoText" id="comparison-table-content" mktoName="Comparison Table - Content">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th style="text-align:left;">Category</th>
+                <th>Others</th>
+                <th>Candescent</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="Category" style="text-align:left;">Architecture</td>
+                <td data-label="Others">Single tenant, fragmented</td>
+                <td data-label="Candescent">Unified cloud-native platform</td>
+              </tr>
+              <tr>
+                <td data-label="Category" style="text-align:left;">Rollout Speed</td>
+                <td data-label="Others">6-12 months</td>
+                <td data-label="Candescent">6-10 weeks</td>
+              </tr>
+              <tr>
+                <td data-label="Category" style="text-align:left;">UX Consistency</td>
+                <td data-label="Others">Inconsistent, multi-module</td>
+                <td data-label="Candescent">Unified, mobile-first experience</td>
+              </tr>
+              <tr>
+                <td data-label="Category" style="text-align:left;">Innovation</td>
+                <td data-label="Others">Slow roadmap, Tier-1 focused</td>
+                <td data-label="Candescent">Mid-market focused, quarterly releases</td>
+              </tr>
+              <tr>
+                <td data-label="Category" style="text-align:left;">Support</td>
+                <td data-label="Others">Post-sale delays, ticket-based</td>
+                <td data-label="Candescent">Dedicated team, high-touch partnership</td>
+              </tr>
+              <tr>
+                <td data-label="Category" style="text-align:left;">Pricing</td>
+                <td data-label="Others">Premium + modular fees</td>
+                <td data-label="Candescent">Transparent, all-in pricing</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+       </div>
+      </div>
+     </div>
+  </div>
+ </section>
+ <!--Fullwidth Heading Section-->
+
+
+
+  <!--Heading + 2 Rows Section-->
+  <section class="heading-two-rows heading-two-rows-bg-color">
+     <div class="container-fluid">
+      <div class="container-wrapper">
+       <div class="row">
+        <div class="col-md-7">
+         <div class="mktoText" id="heading-two-rows" mktoName="Heading + 2 Rows - Title">
+            <h2>The
+               Impact
+            </h2>
+           </div>
+
+        </div>
+        <div class="col-md-5"></div>
+       </div>
+        <div class="row justify-content-center mb-3">
+        <div class="row justify-content-center mb-3">
+            <!--Col 1-->
+            <div class="col-md-4 mb-3">
+               <div class="text-center">
+                  <div class="mktoText row-1-three-col-heading" id="row-1-three-col-heading-1" mktoName="Heading + 2 Rows - Row 1 Heading">
+                     <h3 class="mt-3">50 minutes</h3>
+                  </div>
+                  <div class="mktoText" id="row-1-three-col-text-1" mktoName="Heading + 2 Rows - Row 1 Text 1">
+                     <p>saved per application</p>
+                  </div>
+               </div>
+            </div>
+            <!--Col 2-->
+            <div class="col-md-4 mb-3">
+               <div class="text-center">
+                  <div class="mktoText row-1-three-col-heading" id="row-1-three-col-heading-2" mktoName="Heading + 2 Rows - Row 1 Heading 2">
+                     <h3 class="mt-3">80% to 30%</h3>
+                  </div>
+                  <div class="mktoText" id="row-1-three-col-text-2" mktoName="Heading + 2 Rows - Row 1 Text 2">
+                     <p>time saved on manual reviews</p>
+                  </div>
+               </div>
+            </div>
+            <!--Col 3-->
+            <div class="col-md-4 mb-3">
+               <div class="text-center">
+                  <div class="mktoText row-1-three-col-heading" id="row-1-three-col-heading-3" mktoName="Heading + 2 Rows - Row 1 Heading 3">
+                     <h3 class="mt-3">50%</h3>
+                  </div>
+                  <div class="mktoText" id="row-1-three-col-text-3" mktoName="Heading + 2 Rows - Row 1 Text 3">
+                     <p>of frontline staff time reclaimed</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row justify-content-center">
+            <!--Col 1-->
+            <div class="col-md-4 mb-3">
+               <div class="text-center">
+                  <div class="mktoText row-2-three-col-heading" id="row-2-three-col-heading-1" mktoName="Heading + 2 Rows - Row 2 Heading 1">
+                     <h3 class="mt-3">3x productivity</h3>
+                  </div>
+                  <div class="mktoText" id="row-2-three-col-text-1" mktoName="Heading + 2 Rows - Row 2 Text 1">
+                     <p>~800 apps/month without more staff</p>
+                  </div>
+               </div>
+            </div>
+            <!--Col 2-->
+            <div class="col-md-4 mb-3">
+               <div class="text-center">
+                  <div class="mktoText row-2-three-col-heading" id="row-2-three-col-heading-2" mktoName="Heading + 2 Rows - Row 2 Heading 2">
+                     <h3 class="mt-3">3 months to 2 weeks</h3>
+                  </div>
+                  <div class="mktoText" id="row-2-three-col-text-2" mktoName="Heading + 2 Rows - Row 2 Text 2">
+                     <p>Reduction of training time</p>
+                  </div>
+               </div>
+            </div>
+            <!--Col 3-->
+            <div class="col-md-4 mb-3">
+               <div class="text-center">
+                  <div class="mktoText row-2-three-col-heading" id="row-2-three-col-heading-3" mktoName="Heading + 2 Rows - Row 2 Heading 3">
+                     <h3 class="mt-3">Most successful implementation</h3>
+                  </div>
+                  <div class="mktoText" id="row-2-three-col-text-3" mktoName="Heading + 2 Rows - Row 2 Text 3">
+                     <p>as described by Apple bank in the last 6 years</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+     </div>
+  </section>
+  <!--Fullwidth Heading Section-->
+
+
+
+
+
+
+   <!-- Form-->
+   <section class="fullwidth-form full-width-form-bg-color">
+    <div class="container-fluid">
+       <div class="container-wrapper">
+        <div class="row">
+         <div class="col-md-9 mx-auto" id="form">
+          <div class="mktoText text-center" id="form-heading" mktoName="Form Heading">
+
+             <h2>Ready to see what’s possible with Candescent?</h2>
+             <h4>Join the growing list of credit unions transforming digital banking with Candescent. Faster launches, happier members, stronger ROI – without the friction. </h4>
+          </div>
+           <div class="form-wrapper">
+             <div class="mktoForm" id="marketo-form" mktoName="Embed Form"></div>
+
+          </div>
+         </div>
+        </div>
+       </div>
+    </div>
+   </section>
+   <!--Fullwidth Form-->
+
+
+</main>
+<!--End Main-->
+
+<!--footer-->
+<footer id="footer">
+
+
+   <div class="container-fluid">
+      <div class="container-wrapper">
+         <div class="footer-links">
+            <div class="row">
+               <div class="col-md-7 mb-4">
+                  <a class="footer-logo" href="https://www.candescent.com/"><img src="https://cdn.prod.website-files.com/672c8bafbeffacdb79421b7d/673cdf03ef03e793b55ce1d4_Candescent%20logo.svg" width="245" alt="logo"/>
+                  </a>
+               </div>
+               <div class="col-md-3">
+           <div class="footer3_box">
+            <ul> <li><a href="https://www.candescent.com/account-opening" target="_blank">Account Opening</a></li> <li><a href="https://www.candescent.com/digital-banking" target="_blank">Digital Banking</a></li> <li><a href="https://www.candescent.com/digital-branch" target="_blank">Digital Branch</a></li> </ul>
+           </div>
+        </div>
+        <div class="col-md-2">
+          <div class="footer3_box">
+            <ul> <li><a href="https://www.candescent.com/about-us" target="_blank">Company</a></li> <li><a href="https://candescent.wd501.myworkdayjobs.com/en-US/Hiring" target="_blank">Careers </a> </li> <li><a href="https://www.candescent.com/contact" target="_blank">Contact</a></li> </ul>
+          </div>
+               </div>
+            </div>
+
+       <div class="row">
+               <div class="col-md-7">
+
+               </div>
+               <div class="col-md-3">
+           <div class="footer3_box">
+            <ul> <li><a href="https://www.linkedin.com/company/candescent-tech/posts/?feedView=all" target="_blank"><img src="https://info.candescent.com/rs/408-TKM-999/images/linkedin.png?version=0" width="35" alt="Linkedin"/></a></li> </ul>
+           </div>
+        </div>
+        <div class="col-md-2">
+          <div class="footer3_box">
+            <a class="button button-outline" href="https://mylogin.ncrvoyix.com/am/XUI/?realm=/ssorealm&spEntityID=https://customerportal.ncrvoyix.com/frsp&goto=https://mylogin.ncrvoyix.com:443/am/saml2/continue/metaAlias/ssorealm/idp?secondVisitUrl%3D/am/SSOPOST/metaAlias/ssorealm/idp?ReqID%253D_13f8a80c8b5105793a3bcd686989b899300d09&AMAuthCookie=#login/" target="_blank">Login</a>
+          </div>
+               </div>
+            </div>
+         </div>
+     <div class="line-divider"></div>
+         <div class="footer-bottom">
+            <div class="row">
+               <div class="col-md-8">
+                  <div class="text-left" style="text-align:left;">
+                     <ul class="list-links-2">
+                        <li><a href="https://www.candescent.com/terms/privacy-policy" target="_blank">Privacy Policy</a></li>
+                        <li><a href="https://www.candescent.com/terms" target="_blank">Terms & Conditions</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="copyright-wrap">
+                     &copy; <script>document.write(new Date().getFullYear())</script> Candescent. All rights reserved
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</footer>
+<!--footer-->
+
+</body>
+</html>
