@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
+
+
+
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NLCP3MK3');</script>
+<!-- End Google Tag Manager -->
+
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta class="mktoString" id="PageTitle" mktoModuleScope="true" mktoname="Page Title" default="Candescent | Landing Page Template" />
     <title>${PageTitle}</title>
 
-  <link rel="icon" href="https://www.candescent.com/themes/custom/uol/favicon/favicon.ico" type="image/x-icon" />
+
+    <link href="https://cdn.prod.website-files.com/672c8bafbeffacdb79421b7d/673f2f1718e293fcf33adafe_Group%2054570%20(2)%20(1).png" rel="shortcut icon" type="image/x-icon"/>
+    <link href="https://cdn.prod.website-files.com/672c8bafbeffacdb79421b7d/673f2f0dab131d4bc58e2e79_Group%2054570%20(1)%20(1).png" rel="apple-touch-icon"/>
   <link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!--Header-->
-  <meta class="mktoString" id="LogoLink" mktoName="Candescent Logo Link" default="https://www.candescent.com/"> 
+  <meta class="mktoString" id="LogoLink" mktoName="Candescent Logo Link" default="https://www.candescent.com/">
 
   <!--Banner-->
   <meta class="mktoBoolean" id="BannerFullWidth" mktoName="Banner Section" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show"> 
@@ -48,12 +62,15 @@
   <!--Form-->
   <meta class="mktoBoolean" id="FormSection" mktoName="Form Section" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show"> 
 
-  <meta class="mktoBoolean" id="FormSection2" mktoName="Form Section2" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show"> 
 
 
- <!-- Google tag (gtag.js) -->
-
- <!-- Google tag (gtag.js) -->
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NLCP3MK3');</script>
+<!-- End Google Tag Manager -->
   <style>
 
   @font-face {
@@ -129,7 +146,7 @@
       font-style: italic;
     }
   li::marker {
-  color:#ade3f6;
+
   }
    ::-moz-selection { /* Code for Firefox */
 
@@ -178,7 +195,7 @@
   .four-cols-icons {
     padding:100px 0px 60px;
     color:#ffffff;
-    background-color: #071727;
+    background-color: #5A94E8;
     display: ${FourColsIconsSection};
   }
 
@@ -196,7 +213,7 @@
     padding: 80px 0px 80px;
     color:#ffffff;
     display: ${FourColsHeadingSection};
-    background-color: #071727;
+    background-color: #5A94E8;
   }
 
 
@@ -273,7 +290,8 @@
 
   /*Heading + 2 Rows*/
   .heading-two-rows {
-    padding:100px 0px;
+    padding-top: 100px;
+    padding-bottom: 40px;
     color:#ffffff;
     display: ${HeadingTwoRowsSection};
     background-color: #081728;
@@ -609,40 +627,56 @@
     border-collapse: collapse;
     margin-top: 40px;
     font-size: 1.125rem;
-    background-color: #081728;
+    background-color: #ffffff;
     border-radius: 0;
     overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
   }
 
   .comparison-table th {
-    background-color:#1b3c64;
-    color: #FFF;
+    background-color: #ffcf23;
+    color: #081728;
     padding: 20px;
-    text-align: left;
+    text-align: center;
     font-weight: 600;
     font-size: 1.3rem;
+    border-bottom: 3px solid #081728;
   }
 
   .comparison-table td {
     padding: 20px;
-    color: #ffffff;
-    text-align: left;
-    background-color: #081728;
+    color: #081728;
+    text-align: center;
   }
 
-  .comparison-table tbody tr {
-    border-top: 1px solid #ffffff;
+  .comparison-table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+
+  .comparison-table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+  }
+
+  /* Blue highlight for specific rows */
+  .comparison-table tbody tr:nth-child(2),
+  .comparison-table tbody tr:nth-child(4),
+  .comparison-table tbody tr:nth-child(6) {
+    background-color: #e8f4fd;
+  }
+
+  .comparison-table tbody tr:hover {
+    opacity: 0.95;
   }
 
   .comparison-table td:first-child {
     font-weight: 600;
-    color: #ffffff;
+    color: #081728;
   }
 
   .table-section-header {
     margin-bottom: 30px;
     color: #ffffff;
-    text-align: left;
+    text-align: center;
   }
 
   .comparison-table-section {
@@ -663,7 +697,7 @@
 
     .comparison-table th {
       font-size: 1rem;
-      text-align: left;
+      text-align: center;
     }
 
     /* Stack table on mobile */
@@ -677,50 +711,193 @@
       border: 2px solid #e0e0e0;
       border-radius: 0;
       overflow: hidden;
-      background-color: #081728;
+      background-color: #ffffff;
+    }
+
+    /* Blue highlight for specific rows on mobile */
+    .comparison-table tbody tr:nth-child(2),
+    .comparison-table tbody tr:nth-child(4),
+    .comparison-table tbody tr:nth-child(6) {
+      background-color: #e8f4fd;
     }
 
     .comparison-table td {
       display: flex;
+      justify-content: space-between;
       padding: 12px;
-      border-left: none;
-      border-right: none;
-      border-bottom: none;
-      border-top: 1px solid #ffffff;
-      background-color: #081728 !important;
+      border: none;
+      border-bottom: 1px solid #e0e0e0;
+      background-color: inherit !important;
       text-align: left;
-      color: #FFF;
     }
 
     .comparison-table td:before {
       content: attr(data-label);
       font-weight: 600;
       margin-right: 10px;
-      color: #FFF;
+      color: #081728;
     }
 
     .comparison-table td:first-child {
-      background-color: #1b3c64 !important;
-      color: #FFF;
+      background-color: #ffcf23 !important;
+      color: #081728;
       font-weight: 600;
-      justify-content: left;
- 
+      justify-content: center;
+      border-bottom: 2px solid #081728;
     }
 
     .comparison-table td:first-child:before {
       display: none;
     }
+
+    .comparison-table td:last-child {
+      border-bottom: none;
+    }
   }
 
+
+
+  select#CountryCode {
+    color: #FFF !important;
+}  
+
+    select#StateCode {
+    color: #FFF !important;
+}
+
+    input#FirstName
+ {
+    color: #FFF !important;
+}
+
+     input#LastName
+ {
+    color: #FFF !important;
+}   
+
+         input#Company
+ {
+    color: #FFF !important;
+} 
+         input#Email
+ {
+    color: #FFF !important;
+} 
+         input#Phone
+ {
+    color: #FFF !important;
+} 
+
+
+    li {color: #000 !important;}
+
+    /* Modal Styles */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(8, 23, 40, 0.9);
+      z-index: 9999;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .modal-overlay.active {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .modal-content {
+      background-color: #254978;
+      color: #ffffff;
+      border-radius: 0;
+      max-width: 600px;
+      width: 100%;
+      max-height: 90vh;
+      overflow-y: auto;
+      position: relative;
+      padding: 60px 40px;
+      animation: modalSlideIn 0.3s ease-out;
+    }
+
+    @keyframes modalSlideIn {
+      from {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: transparent;
+      border: none;
+      color: #ffffff;
+      font-size: 2rem;
+      cursor: pointer;
+      padding: 0;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      z-index: 1;
+    }
+
+    .modal-close:hover {
+      color: #ffcf23;
+      transform: rotate(90deg);
+    }
+
+    .modal-content .mktoText h2 {
+      color: #ffffff;
+      margin-bottom: 15px;
+    }
+
+    .modal-content .mktoText h4 {
+      color: #ffffff;
+      font-weight: 300;
+    }
+    
+    .modal-content .mktoText {
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: 768px) {
+      .modal-content {
+        padding: 40px 20px;
+        max-height: 95vh;
+      }
+      
+      .modal-close {
+        top: 10px;
+        right: 10px;
+      }
+    }
 
     </style>
    </head>
   <body>
 
-    <!-- Google Tag Manager (noscript) -->
 
-    <!-- End Google Tag Manager (noscript) -->
-  <main>
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NLCP3MK3"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->  
+
+
+    <main>
   <!--Banner-->
     <section class="banner-fullwidth" id="banner-hero">
        <div class="container-fluid">
@@ -752,19 +929,13 @@
               </div>
              </div>
              <div>
-               <a class="button button-yellow" href="#form" target="_blank">
+               <button class="button button-yellow" onclick="openModal()" type="button">
                 <span class="mktoText" id="banner-cta" mktoName="Banner CTA">
                Request a Demo
                  </span>
+               </button> 
+             </div>
 
-               </a> 
-             </div>
-             <div style="display: ${ShowBottomBannerText};">
-              <div class="mktoText bottom-banner-text" id="banner-bottom-text" mktoName="Banner Bottom Text" >
-               <p>Designed with deep integrations, no-code flexibility, and a modern UX, Candescent Terafina helps you acquire more customers, lower costs, and reduce friction—driving measurable ROI through faster onboarding, stronger conversion, and higher product adoption without compromising fraud protection.
-               </p>
-              </div>
-             </div>
           </div>
          </div>
         </div>
@@ -773,63 +944,119 @@
     <!--/Banner-->
 
 
+   <!--4 Columns Icons -->
+    <section class="four-cols-icons four-col-icon-bg-color">
+      <div class="container-fluid">
+    <div class="container-wrapper">
+        <div class="row justify-content-center">
+            <!--Col 1-->
+            <div class="col-md-3 mb-4">
+              <div class="mktoText text-center" mktoName="4 Columns Icons - Icon 1" id="col-1-icon"><img src="https://info.candescent.com/rs/408-TKM-999/images/icon1.png?version=0" class="img-fluid" width="110" alt="Icon 1"/></div>
+              <div class="text-center">
+                  <div class="mktoText four-col-icon-heading" id="four-col-icon-heading-1" mktoName="4 Columns Icons - Heading 1">
+                    <div>192-225%</div>
+                  </div>
+                  <div class="mktoText" id="four-col-text-1" mktoName="4 Columns Icons - Text 1">
+                    <p>Digital Deposit Growth</p>
+                  </div>
+
+              </div>
+            </div>
+            <!--Col 2-->
+            <div class="col-md-3 mb-4">
+              <div class="mktoText text-center" mktoName="4 Columns Icons - Icon 2" id="col-2-icon"><img src="https://info.candescent.com/rs/408-TKM-999/images/icon2.png?version=0" class="img-fluid" width="110" alt="Icon 2"/></div>
+              <div class="text-center">
+                  <div class="mktoText four-col-icon-heading" id="four-col-icon-heading-2" mktoName="4 Columns Icons - Heading 2">
+           <div>50-60%</div>
+                  </div>
+                  <div class="mktoText" id="four-col-text-2" mktoName="4 Columns Icons - Text 2">
+                    <p>Lower Implementation Cost</p>
+                  </div>
+
+              </div>
+            </div>
+            <!--Col 3-->
+            <div class="col-md-3 mb-4">
+              <div class="mktoText text-center" mktoName="4 Columns Icons - Icon 3" id="col-3-icon"><img src="https://info.candescent.com/rs/408-TKM-999/images/icon3.png?version=0" class="img-fluid" width="110" alt="Icon 3"/></div>
+              <div class="text-center">
+                  <div class="mktoText four-col-icon-heading" id="four-col-icon-heading-3" mktoName="4 Columns Icons - Heading 3">
+           <div>50%</div>
+                  </div>
+                  <div class="mktoText" id="four-col-text-3" mktoName="4 Columns Icons - Text 3">
+                    <p>quicker time to go live</p>
+                  </div>
+
+              </div>
+            </div>
+            <!--Col 4-->
+            <div class="col-md-3 mb-4">
+              <div class="mktoText text-center" mktoName="4 Columns Icons - Icon 4" id="col-4-icon"><img src="https://info.candescent.com/rs/408-TKM-999/images/icon4.png?version=0" class="img-fluid" width="110" alt="Icon 4"/></div>
+              <div class="text-center">
+                  <div class="mktoText four-col-icon-heading" id="four-col-icon-heading-4" mktoName="4 Columns Icon - Heading 4">
+           <div>100+</div>
+                  </div>
+                  <div class="mktoText" id="four-col-text-4" mktoName="4 Columns Icons - Text 4">
+                    <p>prebuilt connectors</p>
+                  </div>
+
+              </div>
+            </div>
+        </div>
+    </div>
+      </div>
+    </section>
+    <!--4 Columns - Icons + Text-->
 
 <!--4 Columns - Heading + Text-->
 <section class="four-cols-heading-text four-col-icon-heading-bg-color">
-  <div class="container-fluid">
-     <div class="container-wrapper">
-      <div class="row justify-content-center">
-      <div  id="intro-text" mktoName="Intro Text">
-      <h2 style="text-align:center;">When legacy slows you down, members notice, and it becomes your problem to solve. </h2>
-<br><br>
-    <h4>Too many financial institutions are stuck with outdated digital platforms that slow innovation and frustrate members. Aging single-tenant architecture, slow-release cycles, and inconsistent UX make it harder to deliver on your digital promise.  
-    </h4>
-  </div>
-     <!--Col 1-->
-     <div class="col-md-4 mb-3" style="margin-top: 60px;">
+   <div class="container-fluid">
+      <div class="container-wrapper">
+         <div class="row justify-content-center">
+            <!--Col 1-->
+            <div class="col-md-4 mb-3" style="margin-top: 60px;">
 
-        <div class="text-center">
+               <div class="text-center">
 
-          <div class="" id="four-col-text-icon-1-icon 2b" mktoName="Intro Text - Icon 1"><img src="https://info.candescent.com/rs/408-TKM-999/images/icon7.png?version=0" width="80" class="img-fluid" alt="Icon 1">
-          </div>
-           <div class="lead mt-3" id="four-col-text-icon-1b" mktoName="Intro Text - Text 1">
-            <p>Faster deployments	
-            </p>
+         <div class="mktoText" id="four-col-text-icon-1-icon" mktoName="4 Columns Heading + Text - Icon 1"><img src="https://info.candescent.com/rs/408-TKM-999/images/c-icon1.png?version=0" height="87" class="img-fluid" alt="Icon 1">
+         </div>
+                  <div class="mktoText lead mt-3" id="four-col-text-icon-1" mktoName="4 Columns Heading + Text - Text 1">
+                     <p>3x productivity<br/>
+                        & growth
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <!--Col 2-->
+            <div class="col-md-4 mb-3" style="margin-top: 60px;">
+
+               <div class="text-center">
+          <div class="mktoText" id="four-col-text-icon-2-icon" mktoName="4 Columns Heading + Text - Icon 2"><img src="https://info.candescent.com/rs/408-TKM-999/images/c-icon2.png?version=0" height="87" alt="Icon 2">
+         </div>
+                  <div class="mktoText lead  mt-3" id="four-col-text-icon-2" mktoName="4 Columns Heading + Text - Text 2">
+                     <p>Significant<br/>
+                        time saving
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <!--Col 3-->
+            <div class="col-md-4 mb-3" style="margin-top: 60px;">
+               <div class="text-center">
+          <div class="mktoText" id="four-col-text-icon-3-icon" mktoName="4 Columns Heading + Text - Icon 3"><img src="https://info.candescent.com/rs/408-TKM-999/images/c-icon3.png?version=0" height="87" alt="Icon 3">
+         </div>
+                  <div class="mktoText lead  mt-3" id="four-col-text-icon-3" mktoName="4 Columns Heading + Text - Text 3">
+                     <p>Manual review reduced<br/>
+                        from 80% to 30%
+                     </p>
+                  </div>
+               </div>
+            </div>
          </div>
       </div>
-     </div>
-     <!--Col 2-->
-     <div class="col-md-4 mb-3" style="margin-top: 60px;">
+   </div>
+</section>
+<!--4 Columns - Icons + Text-->
 
-      <div class="text-center">
-       <div class="" id="four-col-text-icon-2-icon2b" mktoName="Intro Text - Icon 2"><img src="https://info.candescent.com/rs/408-TKM-999/images/icon5.png?version=0" height="87" alt="Icon 2">
-          </div>
-           <div class="lead  mt-3" id="four-col-text-icon-2b" mktoName="Intro Text - Text 2">
-            <p>Higher digital<br>adoption
-            </p>
-           </div>
-      </div>
-     </div>
-     <!--Col 3-->
-     <div class="col-md-4 mb-3" style="margin-top: 60px;">
-      <div class="text-center">
-       <div class="" id="four-col-text-icon-3-icon 2b" mktoName="Intro Text - Icon 3"><img src="https://info.candescent.com/rs/408-TKM-999/images/icon6.png?version=0" height="87" alt="Icon 3">
-          </div>
-           <div class=" lead  mt-3" id="four-col-text-icon-3b" mktoName="Intro Text - Text 3">
-            <p>Fewer support<br>tickets
-            </p>
-           </div>
-
-
-
-
-
-       </div>
-      </div>
-     </div>
-  </div>
- </section>
- <!--4 Columns - Icons + Text-->
 
 
 
@@ -930,7 +1157,7 @@
               </div>
 
           <div class="col-md-6 mt-4">
-                <div class="mktoText" mktoName="Block Right Image + Text - Photo" id="right-block-photo"><img src="https://info.candescent.com/rs/408-TKM-999/images/laptop2.png?version=0" class="img-fluid" alt="Image"></div>
+                <div class="mktoText" mktoName="Block Right Image + Text - Photo" id="right-block-photo"><img src="https://info.candescent.com/rs/408-TKM-999/images/banner3.png?version=0" class="img-fluid" alt="Image"></div>
             </div>
 
 
@@ -943,9 +1170,9 @@
   <!--Text + 3 Columns-->
   <section class="fullwidth-text-three-columns fullwidth-text-three-columns-bg-color">
      <div class="container-fluid">
-      <div class="container-wrapper">
+      <div class="container-wrapper"  style="max-width:1100px;">
        <div class="row">
-        <div class="col-md-7">
+        <div class="col-md-12">
              <div class="mktoText" id="fullwidthtext-heading" mktoName="Text + 3 Columns - Heading">
               <h2>The Solution</h2>
              </div>
@@ -954,14 +1181,43 @@
                  <div>Apple Bank partnered with Candescent to implement a next-generation account opening
                  platform designed with extensibility, automation and fraud prevention at its core.<br/>
                  <br/><br/>
-                 <span style="color:#5A94E8;">The Deployment focused on:</span></div>
+
               </div>
              </div>
         </div>
         <div class="col-md-5"></div>
        </div>
        <div class="row justify-content-center">
-         <!--Col 1-->
+
+      </div>
+      </div>
+     </div>
+  </section>
+  <!--Fullwidth Text Section-->
+
+
+
+ <!--Fullwidth Heading Section-->
+
+
+
+  <!--Heading + 2 Rows Section-->
+  <section class="heading-two-rows heading-two-rows-bg-color">
+     <div class="container-fluid">
+      <div class="container-wrapper">
+       <div class="row">
+        <div class="col-md-7">
+         <div class="mktoText" id="heading-two-rows" mktoName="Heading + 2 Rows - Title">
+            <h2>The Impact
+            </h2>
+           </div>
+
+        </div>
+        <div class="col-md-5"></div>
+       </div>
+        <div class="row justify-content-center mb-3">
+        <div class="row justify-content-center mb-3">
+            <!--Col 1-->
          <div class="col-md-4 mb-3">
           <div class="text-left">
            <div class="mktoText three-col-heading" id="three-col-heading-1" mktoName="Text + 3 Columns - Heading 1">
@@ -994,162 +1250,8 @@
            </div>
           </div>
          </div>
-      </div>
-      </div>
-     </div>
-  </section>
-  <!--Fullwidth Text Section-->
-
-
-
-<!--TableSection-->
-<section class="comparison-table-section">
-  <div class="container-fluid">
-     <div class="container-wrapper">
-      <div class="row">
-       <div class="col-12">
-        <div class="mktoText" id="comparison-table-heading" mktoName="Comparison Table - Heading">
-           <h2 class="table-section-header">Make the switch that modernizes every channel</h2>
-          </div>
-
-          <div class="mktoText" id="comparison-table-content" mktoName="Comparison Table - Content">
-          <table class="comparison-table">
-            <thead>
-              <tr>
-                <th style="text-align:left;">Category</th>
-                <th>Others</th>
-                <th>Candescent</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td data-label="Category" style="text-align:left;">Architecture</td>
-                <td data-label="Others">Single tenant, fragmented</td>
-                <td data-label="Candescent">Unified cloud-native platform</td>
-              </tr>
-              <tr>
-                <td data-label="Category" style="text-align:left;">Rollout Speed</td>
-                <td data-label="Others">6-12 months</td>
-                <td data-label="Candescent">6-10 weeks</td>
-              </tr>
-              <tr>
-                <td data-label="Category" style="text-align:left;">UX Consistency</td>
-                <td data-label="Others">Inconsistent, multi-module</td>
-                <td data-label="Candescent">Unified, mobile-first experience</td>
-              </tr>
-              <tr>
-                <td data-label="Category" style="text-align:left;">Innovation</td>
-                <td data-label="Others">Slow roadmap, Tier-1 focused</td>
-                <td data-label="Candescent">Mid-market focused, quarterly releases</td>
-              </tr>
-              <tr>
-                <td data-label="Category" style="text-align:left;">Support</td>
-                <td data-label="Others">Post-sale delays, ticket-based</td>
-                <td data-label="Candescent">Dedicated team, high-touch partnership</td>
-              </tr>
-              <tr>
-                <td data-label="Category" style="text-align:left;">Pricing</td>
-                <td data-label="Others">Premium + modular fees</td>
-                <td data-label="Candescent">Transparent, all-in pricing</td>
-              </tr>
-            </tbody>
-          </table>
-          </div>
-       </div>
-      </div>
-     </div>
-  </div>
- </section>
- <!--Fullwidth Heading Section-->
-
-
-
-  <!--Heading + 2 Rows Section-->
-  <section class="heading-two-rows heading-two-rows-bg-color">
-     <div class="container-fluid">
-      <div class="container-wrapper">
-       <div class="row">
-        <div class="col-md-7">
-         <div class="mktoText" id="heading-two-rows" mktoName="Heading + 2 Rows - Title">
-            <h2>The
-               Impact
-            </h2>
-           </div>
-
-        </div>
-        <div class="col-md-5"></div>
-       </div>
-        <div class="row justify-content-center mb-3">
-        <div class="row justify-content-center mb-3">
-            <!--Col 1-->
-            <div class="col-md-4 mb-3">
-               <div class="text-center">
-                  <div class="mktoText row-1-three-col-heading" id="row-1-three-col-heading-1" mktoName="Heading + 2 Rows - Row 1 Heading">
-                     <h3 class="mt-3">50 minutes</h3>
-                  </div>
-                  <div class="mktoText" id="row-1-three-col-text-1" mktoName="Heading + 2 Rows - Row 1 Text 1">
-                     <p>saved per application</p>
-                  </div>
-               </div>
-            </div>
-            <!--Col 2-->
-            <div class="col-md-4 mb-3">
-               <div class="text-center">
-                  <div class="mktoText row-1-three-col-heading" id="row-1-three-col-heading-2" mktoName="Heading + 2 Rows - Row 1 Heading 2">
-                     <h3 class="mt-3">80% to 30%</h3>
-                  </div>
-                  <div class="mktoText" id="row-1-three-col-text-2" mktoName="Heading + 2 Rows - Row 1 Text 2">
-                     <p>time saved on manual reviews</p>
-                  </div>
-               </div>
-            </div>
-            <!--Col 3-->
-            <div class="col-md-4 mb-3">
-               <div class="text-center">
-                  <div class="mktoText row-1-three-col-heading" id="row-1-three-col-heading-3" mktoName="Heading + 2 Rows - Row 1 Heading 3">
-                     <h3 class="mt-3">50%</h3>
-                  </div>
-                  <div class="mktoText" id="row-1-three-col-text-3" mktoName="Heading + 2 Rows - Row 1 Text 3">
-                     <p>of frontline staff time reclaimed</p>
-                  </div>
-               </div>
-            </div>
          </div>
-         <div class="row justify-content-center">
-            <!--Col 1-->
-            <div class="col-md-4 mb-3">
-               <div class="text-center">
-                  <div class="mktoText row-2-three-col-heading" id="row-2-three-col-heading-1" mktoName="Heading + 2 Rows - Row 2 Heading 1">
-                     <h3 class="mt-3">3x productivity</h3>
-                  </div>
-                  <div class="mktoText" id="row-2-three-col-text-1" mktoName="Heading + 2 Rows - Row 2 Text 1">
-                     <p>~800 apps/month without more staff</p>
-                  </div>
-               </div>
-            </div>
-            <!--Col 2-->
-            <div class="col-md-4 mb-3">
-               <div class="text-center">
-                  <div class="mktoText row-2-three-col-heading" id="row-2-three-col-heading-2" mktoName="Heading + 2 Rows - Row 2 Heading 2">
-                     <h3 class="mt-3">3 months to 2 weeks</h3>
-                  </div>
-                  <div class="mktoText" id="row-2-three-col-text-2" mktoName="Heading + 2 Rows - Row 2 Text 2">
-                     <p>Reduction of training time</p>
-                  </div>
-               </div>
-            </div>
-            <!--Col 3-->
-            <div class="col-md-4 mb-3">
-               <div class="text-center">
-                  <div class="mktoText row-2-three-col-heading" id="row-2-three-col-heading-3" mktoName="Heading + 2 Rows - Row 2 Heading 3">
-                     <h3 class="mt-3">Most successful implementation</h3>
-                  </div>
-                  <div class="mktoText" id="row-2-three-col-text-3" mktoName="Heading + 2 Rows - Row 2 Text 3">
-                     <p>as described by Apple bank in the last 6 years</p>
-                  </div>
-               </div>
-            </div>
-         </div>
+
       </div>
      </div>
   </section>
@@ -1157,23 +1259,35 @@
 
 
 
+  <!--Fullwidth Form-->
+
 
 
 
    <!-- Form-->
-   <section class="fullwidth-form full-width-form-bg-color">
+   <section class="fullwidth-form full-width-form-bg-color" id="form">
     <div class="container-fluid">
        <div class="container-wrapper">
         <div class="row">
-         <div class="col-md-9 mx-auto" id="form">
+         <div class="col-md-9 mx-auto">
           <div class="mktoText text-center" id="form-heading" mktoName="Form Heading">
-
              <h2>Ready to see what’s possible with Candescent?</h2>
              <h4>Join the growing list of credit unions transforming digital banking with Candescent. Faster launches, happier members, stronger ROI – without the friction. </h4>
           </div>
            <div class="form-wrapper">
-             <div class="mktoForm" id="marketo-form" mktoName="Embed Form"></div>
-
+             <form class="mktoForm mktoHasWidth mktoLayoutLeft" id="mktoForm_bottom" novalidate="novalidate" style="font-family: Helvetica, Arial, sans-serif; font-size: 13px; color: rgb(51, 51, 51); width: 100%;">
+               <div class="mktoFormRow"><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoFieldWrap mktoRequiredField"><label for="FirstName_bottom" class="mktoLabel mktoHasWidth" style="width: 100px;"><div class="mktoAsterix">*</div>First name</label><input id="FirstName_bottom" name="FirstName" placeholder="Your first name" maxlength="255" type="text" class="mktoField mktoTextField mktoHasWidth mktoRequired" aria-required="true" style="width: 150px;"></div></div></div>
+               <div class="mktoFormRow"><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoFieldWrap mktoRequiredField"><label for="LastName_bottom" class="mktoLabel mktoHasWidth" style="width: 100px;"><div class="mktoAsterix">*</div>Last name</label><input id="LastName_bottom" name="LastName" placeholder="Your last name" maxlength="255" type="text" class="mktoField mktoTextField mktoHasWidth mktoRequired" aria-required="true" style="width: 150px;"></div></div></div>
+               <div class="mktoFormRow"><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoFieldWrap mktoRequiredField"><label for="Company_bottom" class="mktoLabel mktoHasWidth" style="width: 100px;"><div class="mktoAsterix">*</div>Company name</label><input id="Company_bottom" name="Company" placeholder="Your company name" maxlength="255" type="text" class="mktoField mktoTextField mktoHasWidth mktoRequired" aria-required="true" style="width: 150px;"></div></div></div>
+               <div class="mktoFormRow"><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoFieldWrap mktoRequiredField"><label for="Email_bottom" class="mktoLabel mktoHasWidth" style="width: 100px;"><div class="mktoAsterix">*</div>Company email</label><input id="Email_bottom" name="Email" placeholder="Your company email" maxlength="255" type="email" class="mktoField mktoEmailField mktoHasWidth mktoRequired" aria-required="true" style="width: 150px;"></div></div></div>
+               <div class="mktoFormRow"><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoFieldWrap mktoRequiredField"><label for="Phone_bottom" class="mktoLabel mktoHasWidth" style="width: 100px;"><div class="mktoAsterix">*</div>Phone number</label><input id="Phone_bottom" name="Phone" placeholder="Your phone number" maxlength="255" type="tel" class="mktoField mktoTelField mktoHasWidth mktoRequired" aria-required="true" style="width: 150px;"></div></div></div>
+               <div class="mktoFormRow"><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoFieldWrap mktoRequiredField"><label for="CountryCode_bottom" class="mktoLabel mktoHasWidth" style="width: 100px;"><div class="mktoAsterix">*</div>Country</label><select id="CountryCode_bottom" name="CountryCode" class="mktoField mktoHasWidth mktoRequired" aria-required="true" style="width: 150px;"><option value="">Select...</option><option value="US">United States</option><option value="CA">Canada</option></select></div></div></div>
+               <div class="mktoFormRow"><div class="mktoPlaceholder mktoPlaceholderStateCode"></div></div>
+               <div class="mktoFormRow"><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoFieldWrap"><label for="promotionsandOffers_bottom" class="mktoLabel mktoHasWidth" style="width: 100px;"><div class="mktoAsterix">*</div>Stay up to date with Candescent</label><div class="mktoLogicalField mktoCheckboxList mktoHasWidth" style="width: 150px;"><input name="promotionsandOffers" id="promotionsandOffers_bottom" type="checkbox" value="yes" class="mktoField"><label for="promotionsandOffers_bottom"></label></div></div></div></div>
+               <div class="mktoFormRow"><input type="hidden" name="LeadStatus" class="mktoField mktoFieldDescriptor mktoFormCol" value="Marketing Generated" style="margin-bottom: 10px;"></div>
+               <div class="mktoFormRow"><input type="hidden" name="LeadSource" class="mktoField mktoFieldDescriptor mktoFormCol" value="Marketing - Inbound" style="margin-bottom: 10px;"></div>
+               <div class="mktoButtonRow"><span class="mktoButtonWrap mktoSimple" style="margin-left: 120px;"><button type="submit" class="mktoButton">Download the report</button></span></div>
+             </form>
           </div>
          </div>
         </div>
@@ -1185,6 +1299,35 @@
 
 </main>
 <!--End Main-->
+
+<!-- Modal Lightbox -->
+<div class="modal-overlay" id="formModal">
+  <div class="modal-content">
+    <button class="modal-close" onclick="closeModal()" aria-label="Close modal">&times;</button>
+    <div class="col-md-9 mx-auto">
+      <div class="mktoText text-center" id="form-heading-modal" mktoName="Modal Form Heading">
+        <h2>Download the IDC Assessment</h2>
+        <h4>1,300+ institutions. 30M users. IDC Leader recognition. Learn what sets Candescent's platform apart in digital banking. Download the report.</h4>
+      </div>
+      <div class="form-wrapper">
+        <form class="mktoForm mktoHasWidth mktoLayoutLeft" id="mktoForm_modal" novalidate="novalidate" style="font-family: Helvetica, Arial, sans-serif; font-size: 13px; color: rgb(51, 51, 51); width: 100%;">
+          <div class="mktoFormRow"><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoFieldWrap mktoRequiredField"><label for="FirstName_modal" class="mktoLabel mktoHasWidth" style="width: 100px;"><div class="mktoAsterix">*</div>First name</label><input id="FirstName_modal" name="FirstName" placeholder="Your first name" maxlength="255" type="text" class="mktoField mktoTextField mktoHasWidth mktoRequired" aria-required="true" style="width: 150px;"></div></div></div>
+          <div class="mktoFormRow"><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoFieldWrap mktoRequiredField"><label for="LastName_modal" class="mktoLabel mktoHasWidth" style="width: 100px;"><div class="mktoAsterix">*</div>Last name</label><input id="LastName_modal" name="LastName" placeholder="Your last name" maxlength="255" type="text" class="mktoField mktoTextField mktoHasWidth mktoRequired" aria-required="true" style="width: 150px;"></div></div></div>
+          <div class="mktoFormRow"><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoFieldWrap mktoRequiredField"><label for="Company_modal" class="mktoLabel mktoHasWidth" style="width: 100px;"><div class="mktoAsterix">*</div>Company name</label><input id="Company_modal" name="Company" placeholder="Your company name" maxlength="255" type="text" class="mktoField mktoTextField mktoHasWidth mktoRequired" aria-required="true" style="width: 150px;"></div></div></div>
+          <div class="mktoFormRow"><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoFieldWrap mktoRequiredField"><label for="Email_modal" class="mktoLabel mktoHasWidth" style="width: 100px;"><div class="mktoAsterix">*</div>Company email</label><input id="Email_modal" name="Email" placeholder="Your company email" maxlength="255" type="email" class="mktoField mktoEmailField mktoHasWidth mktoRequired" aria-required="true" style="width: 150px;"></div></div></div>
+          <div class="mktoFormRow"><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoFieldWrap mktoRequiredField"><label for="Phone_modal" class="mktoLabel mktoHasWidth" style="width: 100px;"><div class="mktoAsterix">*</div>Phone number</label><input id="Phone_modal" name="Phone" placeholder="Your phone number" maxlength="255" type="tel" class="mktoField mktoTelField mktoHasWidth mktoRequired" aria-required="true" style="width: 150px;"></div></div></div>
+          <div class="mktoFormRow"><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoFieldWrap mktoRequiredField"><label for="CountryCode_modal" class="mktoLabel mktoHasWidth" style="width: 100px;"><div class="mktoAsterix">*</div>Country</label><select id="CountryCode_modal" name="CountryCode" class="mktoField mktoHasWidth mktoRequired" aria-required="true" style="width: 150px;"><option value="">Select...</option><option value="US">United States</option><option value="CA">Canada</option></select></div></div></div>
+          <div class="mktoFormRow"><div class="mktoPlaceholder mktoPlaceholderStateCode"></div></div>
+          <div class="mktoFormRow"><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoFieldWrap"><label for="promotionsandOffers_modal" class="mktoLabel mktoHasWidth" style="width: 100px;"><div class="mktoAsterix">*</div>Stay up to date with Candescent</label><div class="mktoLogicalField mktoCheckboxList mktoHasWidth" style="width: 150px;"><input name="promotionsandOffers" id="promotionsandOffers_modal" type="checkbox" value="yes" class="mktoField"><label for="promotionsandOffers_modal"></label></div></div></div></div>
+          <div class="mktoFormRow"><input type="hidden" name="LeadStatus" class="mktoField mktoFieldDescriptor mktoFormCol" value="Marketing Generated" style="margin-bottom: 10px;"></div>
+          <div class="mktoFormRow"><input type="hidden" name="LeadSource" class="mktoField mktoFieldDescriptor mktoFormCol" value="Marketing - Inbound" style="margin-bottom: 10px;"></div>
+          <div class="mktoButtonRow"><span class="mktoButtonWrap mktoSimple" style="margin-left: 120px;"><button type="submit" class="mktoButton">Download the report</button></span></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Modal Lightbox -->
 
 <!--footer-->
 <footer id="footer">
@@ -1234,20 +1377,72 @@
                      <ul class="list-links-2">
                         <li><a href="https://www.candescent.com/terms/privacy-policy" target="_blank">Privacy Policy</a></li>
                         <li><a href="https://www.candescent.com/terms" target="_blank">Terms & Conditions</a></li>
+
+
                      </ul>
+
                   </div>
                </div>
                <div class="col-md-4">
-                  <div class="copyright-wrap">
-                     &copy; <script>document.write(new Date().getFullYear())</script> Candescent. All rights reserved
+                  <div class="copyright-wrap" style="font-size:12px;">
+                     &copy; <script>document.write(new Date().getFullYear())</script> Candescent. All rights reserved | SOURCE: IDC MarketScape: North America Retail Digital Banking Solutions 2025–2026 Vendor Assessment, by Marc DeCastro, November 2025, IDC #US52039425.
+
+
+
                   </div>
                </div>
             </div>
          </div>
       </div>
    </div>
+
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NLCP3MK3"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
 </footer>
 <!--footer-->
+
+<script>
+// Modal Functions
+function openModal() {
+  var modal = document.getElementById('formModal');
+  if (modal) {
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+  }
+}
+
+function closeModal() {
+  var modal = document.getElementById('formModal');
+  if (modal) {
+    modal.classList.remove('active');
+    document.body.style.overflow = ''; // Restore scrolling
+  }
+}
+
+// Close modal when clicking outside the modal content
+document.addEventListener('DOMContentLoaded', function() {
+  var modal = document.getElementById('formModal');
+  if (modal) {
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+  }
+  
+  // Close modal with Escape key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      closeModal();
+    }
+  });
+});
+</script>
 
 </body>
 </html>
